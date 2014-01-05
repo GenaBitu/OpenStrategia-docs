@@ -1,4 +1,4 @@
-OpenStartegia-docs
+OpenStrategia-docs
 ==================
 
 docs for OpenStrategia
