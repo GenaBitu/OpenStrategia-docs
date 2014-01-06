@@ -68,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="../../files.html"><span>File&#160;List</span></a></li>
+      <li><a href="../../globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -90,7 +91,7 @@ $(document).ready(function(){initNavTree('d2/d73/_shader_8hpp_source.html','../.
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,25 +110,26 @@ $(document).ready(function(){initNavTree('d2/d73/_shader_8hpp_source.html','../.
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHADER_HPP</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/dec/_libs_8hpp.html">Libs.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d1/d51/class_shader.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/d51/class_shader.html">Shader</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">const</span> GLuint shaderID;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d1/d51/class_shader.html#a7bcdedb04eeffcd1171ac497c892b7dd">Shader</a>(std::string name, <span class="keyword">const</span> GLenum shaderType);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    ~<a class="code" href="../../d1/d51/class_shader.html">Shader</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"> #endif // SHADER_HPP</span></div>
-<div class="ttc" id="class_shader_html"><div class="ttname"><a href="../../d1/d51/class_shader.html">Shader</a></div><div class="ttdef"><b>Definition:</b> Shader.hpp:11</div></div>
-<div class="ttc" id="_libs_8hpp_html"><div class="ttname"><a href="../../d3/dec/_libs_8hpp.html">Libs.hpp</a></div></div>
-<div class="ttc" id="class_shader_html_a7bcdedb04eeffcd1171ac497c892b7dd"><div class="ttname"><a href="../../d1/d51/class_shader.html#a7bcdedb04eeffcd1171ac497c892b7dd">Shader::Shader</a></div><div class="ttdeci">Shader(std::string name, const GLenum shaderType)</div><div class="ttdef"><b>Definition:</b> Shader.cpp:5</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d1/d51/class_shader.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/d51/class_shader.html">Shader</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d1/d51/class_shader.html#a9b651b3ababb5f722450a7fca957fc37">   18</a></span>&#160;    <span class="keyword">const</span> GLuint <a class="code" href="../../d1/d51/class_shader.html#a9b651b3ababb5f722450a7fca957fc37">shaderID</a>; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="../../d1/d51/class_shader.html#a7bcdedb04eeffcd1171ac497c892b7dd">Shader</a>(std::string name, <span class="keyword">const</span> GLenum shaderType);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~<a class="code" href="../../d1/d51/class_shader.html">Shader</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"> #endif // SHADER_HPP</span></div>
+<div class="ttc" id="class_shader_html_a9b651b3ababb5f722450a7fca957fc37"><div class="ttname"><a href="../../d1/d51/class_shader.html#a9b651b3ababb5f722450a7fca957fc37">Shader::shaderID</a></div><div class="ttdeci">const GLuint shaderID</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d73/_shader_8hpp_source.html#l00018">Shader.hpp:18</a></div></div>
+<div class="ttc" id="class_shader_html"><div class="ttname"><a href="../../d1/d51/class_shader.html">Shader</a></div><div class="ttdoc">Shader class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d73/_shader_8hpp_source.html#l00015">Shader.hpp:15</a></div></div>
+<div class="ttc" id="_libs_8hpp_html"><div class="ttname"><a href="../../d3/dec/_libs_8hpp.html">Libs.hpp</a></div><div class="ttdoc">File with libraries and dependencies. </div></div>
+<div class="ttc" id="class_shader_html_a7bcdedb04eeffcd1171ac497c892b7dd"><div class="ttname"><a href="../../d1/d51/class_shader.html#a7bcdedb04eeffcd1171ac497c892b7dd">Shader::Shader</a></div><div class="ttdeci">Shader(std::string name, const GLenum shaderType)</div><div class="ttdoc">Loads a shader. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/_shader_8cpp_source.html#l00005">Shader.cpp:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d73/_shader_8hpp.html">Shader.hpp</a></li>
-    <li class="footer">Generated on Sun Jan 5 2014 21:20:57 for OpenStrategia by
+    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

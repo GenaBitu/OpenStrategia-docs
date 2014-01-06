@@ -2,18 +2,23 @@ var NAVTREE =
 [
   [ "OpenStrategia", "index.html", [
     [ "LICENSE", "da/d8a/md__d_1__dokumenty__marek__gena_bitu__git_hub__open_strategia__l_i_c_e_n_s_e.html", null ],
-    [ "OpenStrategia", "d5/d85/md__d_1__dokumenty__marek__gena_bitu__git_hub__open_strategia__r_e_a_d_m_e.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+      [ "File List", "files.html", "files" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Variables", "globals_vars.html", null ]
+      ] ]
     ] ]
   ] ]
 ];

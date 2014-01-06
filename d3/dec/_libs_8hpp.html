@@ -68,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="../../files.html"><span>File&#160;List</span></a></li>
+      <li><a href="../../globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -90,7 +91,7 @@ $(document).ready(function(){initNavTree('d3/dec/_libs_8hpp.html','../../');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,6 +105,9 @@ $(document).ready(function(){initNavTree('d3/dec/_libs_8hpp.html','../../');});
 <div class="title">Libs.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>File with libraries and dependencies.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
 <code>#include &lt;fstream&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
@@ -124,20 +128,22 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d83/_libs_8hpp__dep__incl.png" border="0" usemap="#_libs_8hppdep" alt=""/></div>
 <map name="_libs_8hppdep" id="_libs_8hppdep">
-<area shape="rect" id="node2" href="../../d4/d13/_main_8hpp.html" title="Main.hpp" alt="" coords="271,155,346,181"/><area shape="rect" id="node3" href="../../d2/d73/_shader_8hpp.html" title="Shader.hpp" alt="" coords="30,80,118,107"/><area shape="rect" id="node4" href="../../d9/dd5/_program_8hpp.html" title="Program.hpp" alt="" coords="142,80,238,107"/><area shape="rect" id="node5" href="../../d4/d6a/_camera_8hpp.html" title="Camera.hpp" alt="" coords="263,80,354,107"/><area shape="rect" id="node6" href="../../d2/d59/_render_object_8hpp.html" title="RenderObject.hpp" alt="" coords="379,80,505,107"/><area shape="rect" id="node7" href="../../de/d47/_render_object2_d_8hpp.html" title="RenderObject2D.hpp" alt="" coords="529,80,671,107"/><area shape="rect" id="node8" href="../../de/dc9/_render_object3_d_8hpp.html" title="RenderObject3D.hpp" alt="" coords="696,80,838,107"/></map>
+<area shape="rect" id="node2" href="../../d4/d13/_main_8hpp.html" title="Main header file. " alt="" coords="367,155,441,181"/><area shape="rect" id="node10" href="../../d2/d73/_shader_8hpp.html" title="File with Shader class. " alt="" coords="125,80,213,107"/><area shape="rect" id="node11" href="../../d9/dd5/_program_8hpp.html" title="File with Program class. " alt="" coords="237,80,333,107"/><area shape="rect" id="node12" href="../../d4/d6a/_camera_8hpp.html" title="File with Camera class. " alt="" coords="358,80,449,107"/><area shape="rect" id="node13" href="../../d2/d59/_render_object_8hpp.html" title="File with RenderObject class. " alt="" coords="474,80,600,107"/><area shape="rect" id="node14" href="../../de/d47/_render_object2_d_8hpp.html" title="File with RenderObject2D class. " alt="" coords="625,80,767,107"/><area shape="rect" id="node15" href="../../de/dc9/_render_object3_d_8hpp.html" title="File with RenderObject3D class. " alt="" coords="791,80,933,107"/><area shape="rect" id="node3" href="../../d1/d33/_camera_8cpp_source.html" title="Camera.cpp" alt="" coords="5,229,96,256"/><area shape="rect" id="node4" href="../../d5/d12/_main_8cpp_source.html" title="Main.cpp" alt="" coords="121,229,196,256"/><area shape="rect" id="node5" href="../../df/db8/_program_8cpp_source.html" title="Program.cpp" alt="" coords="220,229,316,256"/><area shape="rect" id="node6" href="../../df/dd4/_render_object_8cpp_source.html" title="RenderObject.cpp" alt="" coords="341,229,467,256"/><area shape="rect" id="node7" href="../../dd/d8f/_render_object2_d_8cpp_source.html" title="RenderObject2D.cpp" alt="" coords="491,229,633,256"/><area shape="rect" id="node8" href="../../dd/df5/_render_object3_d_8cpp_source.html" title="RenderObject3D.cpp" alt="" coords="658,229,800,256"/><area shape="rect" id="node9" href="../../d5/d16/_shader_8cpp_source.html" title="Shader.cpp" alt="" coords="825,229,913,256"/></map>
 </div>
 </div>
 <p><a href="../../d3/dec/_libs_8hpp_source.html">Go to the source code of this file.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>File with libraries and dependencies </p>
+<div class="textblock"><p>File with libraries and dependencies. </p>
 <dl class="section author"><dt>Author</dt><dd>GenaBitu </dd></dl>
+
+<p>Definition in file <a class="el" href="../../d3/dec/_libs_8hpp_source.html">Libs.hpp</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dec/_libs_8hpp.html">Libs.hpp</a></li>
-    <li class="footer">Generated on Sun Jan 5 2014 21:20:57 for OpenStrategia by
+    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('d8/d3d/class_render_object.html','../.
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,88 +114,214 @@ $(document).ready(function(){initNavTree('d8/d3d/class_render_object.html','../.
 <div class="title">RenderObject Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> class.  
+ <a href="../../d8/d3d/class_render_object.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for RenderObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/dc3/class_render_object__inherit__graph.png" border="0" usemap="#_render_object_inherit__map" alt="Inheritance graph"/></div>
 <map name="_render_object_inherit__map" id="_render_object_inherit__map">
-<area shape="rect" id="node2" href="../../d4/dfb/class_render_object2_d.html" title="RenderObject2D" alt="" coords="5,80,123,107"/><area shape="rect" id="node3" href="../../d6/dfb/class_render_object3_d.html" title="RenderObject3D" alt="" coords="147,80,264,107"/></map>
+<area shape="rect" id="node2" href="../../d4/dfb/class_render_object2_d.html" title="RenderObject2D class. " alt="" coords="5,80,123,107"/><area shape="rect" id="node3" href="../../d6/dfb/class_render_object3_d.html" title="RenderObject3D class. " alt="" coords="147,80,264,107"/></map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for RenderObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/d29/class_render_object__coll__graph.png" border="0" usemap="#_render_object_coll__map" alt="Collaboration graph"/></div>
 <map name="_render_object_coll__map" id="_render_object_coll__map">
-<area shape="rect" id="node2" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html" title="RenderObject::DrawElements\lIndirectCommand_t" alt="" coords="5,6,197,47"/></map>
+<area shape="rect" id="node2" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html" title="Structure used to draw the RenderObject indirectly. " alt="" coords="5,6,197,47"/></map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html">DrawElementsIndirectCommand_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure used to draw the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> indirectly.  <a href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a947736621128d42275d421f263dcd6de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a947736621128d42275d421f263dcd6de"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RenderObject</b> (const <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a> &amp;other)</td></tr>
+<tr class="memitem:a947736621128d42275d421f263dcd6de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a947736621128d42275d421f263dcd6de">RenderObject</a> (const <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a> &amp;other)</td></tr>
+<tr class="memdesc:a947736621128d42275d421f263dcd6de"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> class copy constructor.  <a href="#a947736621128d42275d421f263dcd6de">More...</a><br/></td></tr>
 <tr class="separator:a947736621128d42275d421f263dcd6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c3232bf1350f076f73b3c4117daea93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c3232bf1350f076f73b3c4117daea93"></a>
-<a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a> &amp;)</td></tr>
-<tr class="separator:a6c3232bf1350f076f73b3c4117daea93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22bb7fdc3378c20f65f7a6fdb2f251c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22bb7fdc3378c20f65f7a6fdb2f251c3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RenderObject</b> (std::vector&lt; GLfloat &gt; *vertexData, std::vector&lt; GLuint &gt; *indexData)</td></tr>
+<tr class="memitem:a325a9a6d92bdfd0f015aa165b94e7051"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a325a9a6d92bdfd0f015aa165b94e7051">operator=</a> (const <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a> &amp;other)</td></tr>
+<tr class="memdesc:a325a9a6d92bdfd0f015aa165b94e7051"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> class assignment operator.  <a href="#a325a9a6d92bdfd0f015aa165b94e7051">More...</a><br/></td></tr>
+<tr class="separator:a325a9a6d92bdfd0f015aa165b94e7051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22bb7fdc3378c20f65f7a6fdb2f251c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a22bb7fdc3378c20f65f7a6fdb2f251c3">RenderObject</a> (std::vector&lt; GLfloat &gt; *vertexData, std::vector&lt; GLuint &gt; *indexData)</td></tr>
+<tr class="memdesc:a22bb7fdc3378c20f65f7a6fdb2f251c3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> constructor.  <a href="#a22bb7fdc3378c20f65f7a6fdb2f251c3">More...</a><br/></td></tr>
 <tr class="separator:a22bb7fdc3378c20f65f7a6fdb2f251c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a357c1b160d8154ea8d99d93e3b553bef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a357c1b160d8154ea8d99d93e3b553bef"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> ()</td></tr>
+<tr class="memitem:a357c1b160d8154ea8d99d93e3b553bef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a357c1b160d8154ea8d99d93e3b553bef">handle</a> ()</td></tr>
+<tr class="memdesc:a357c1b160d8154ea8d99d93e3b553bef"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> event handle.  <a href="#a357c1b160d8154ea8d99d93e3b553bef">More...</a><br/></td></tr>
 <tr class="separator:a357c1b160d8154ea8d99d93e3b553bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f86d708d099fbca27c008133600c17a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f86d708d099fbca27c008133600c17a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:a8f86d708d099fbca27c008133600c17a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a8f86d708d099fbca27c008133600c17a">update</a> ()</td></tr>
+<tr class="memdesc:a8f86d708d099fbca27c008133600c17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update function.  <a href="#a8f86d708d099fbca27c008133600c17a">More...</a><br/></td></tr>
 <tr class="separator:a8f86d708d099fbca27c008133600c17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b53b046a2fb0a0b35f25b2413a6d0dd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a8b53b046a2fb0a0b35f25b2413a6d0dd">render</a> (const <a class="el" href="../../d3/d8a/class_program.html">Program</a> *const shaders, const glm::mat4 *const viewMatrix, const glm::mat4 *const projectionMatrix) const </td></tr>
-<tr class="separator:a8b53b046a2fb0a0b35f25b2413a6d0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912d50d2aa809fffa14d12aa36602164"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a912d50d2aa809fffa14d12aa36602164">render</a> (const <a class="el" href="../../d3/d8a/class_program.html">Program</a> *const prg, const glm::mat4 *const viewMatrix, const glm::mat4 *const projectionMatrix) const </td></tr>
+<tr class="memdesc:a912d50d2aa809fffa14d12aa36602164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the object.  <a href="#a912d50d2aa809fffa14d12aa36602164">More...</a><br/></td></tr>
+<tr class="separator:a912d50d2aa809fffa14d12aa36602164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af5bdae8aa0b40da72f159dab1f85b0c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5bdae8aa0b40da72f159dab1f85b0c9"></a>
-glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><b>position</b></td></tr>
+<tr class="memitem:af5bdae8aa0b40da72f159dab1f85b0c9"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#af5bdae8aa0b40da72f159dab1f85b0c9">position</a></td></tr>
 <tr class="separator:af5bdae8aa0b40da72f159dab1f85b0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d2c19b55190f03b4dc1c45418edbb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88d2c19b55190f03b4dc1c45418edbb4"></a>
-glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><b>orientation</b></td></tr>
+<tr class="memitem:a88d2c19b55190f03b4dc1c45418edbb4"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a88d2c19b55190f03b4dc1c45418edbb4">orientation</a></td></tr>
 <tr class="separator:a88d2c19b55190f03b4dc1c45418edbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
 <tr class="memitem:a8b0c9652779e08991bec589380d32317"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b0c9652779e08991bec589380d32317"></a>
 typedef struct <br class="typebreak"/>
-<a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html">RenderObject::DrawElementsIndirectCommand_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DrawElementsIndirectCommand</b></td></tr>
+<a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html">RenderObject::DrawElementsIndirectCommand_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a8b0c9652779e08991bec589380d32317">DrawElementsIndirectCommand</a></td></tr>
+<tr class="memdesc:a8b0c9652779e08991bec589380d32317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure used to draw the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> indirectly. <br/></td></tr>
 <tr class="separator:a8b0c9652779e08991bec589380d32317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aff9e7da04cca0160ffde9a160b9f3cb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff9e7da04cca0160ffde9a160b9f3cb3"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>VBO</b></td></tr>
+<tr class="memitem:aff9e7da04cca0160ffde9a160b9f3cb3"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#aff9e7da04cca0160ffde9a160b9f3cb3">VBO</a></td></tr>
 <tr class="separator:aff9e7da04cca0160ffde9a160b9f3cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02e939a3b82e4888102ea6c35fb94e09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02e939a3b82e4888102ea6c35fb94e09"></a>
-GLsizei&#160;</td><td class="memItemRight" valign="bottom"><b>VBOsize</b></td></tr>
+<tr class="memitem:a02e939a3b82e4888102ea6c35fb94e09"><td class="memItemLeft" align="right" valign="top">GLsizei&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a02e939a3b82e4888102ea6c35fb94e09">VBOsize</a></td></tr>
 <tr class="separator:a02e939a3b82e4888102ea6c35fb94e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa172793458c130dbde225a33b8ffb794"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa172793458c130dbde225a33b8ffb794"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>EBO</b></td></tr>
+<tr class="memitem:aa172793458c130dbde225a33b8ffb794"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#aa172793458c130dbde225a33b8ffb794">EBO</a></td></tr>
 <tr class="separator:aa172793458c130dbde225a33b8ffb794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af54f9fb23af7bd48e1da4affd5969cc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af54f9fb23af7bd48e1da4affd5969cc7"></a>
-GLsizei&#160;</td><td class="memItemRight" valign="bottom"><b>EBOsize</b></td></tr>
+<tr class="memitem:af54f9fb23af7bd48e1da4affd5969cc7"><td class="memItemLeft" align="right" valign="top">GLsizei&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#af54f9fb23af7bd48e1da4affd5969cc7">EBOsize</a></td></tr>
 <tr class="separator:af54f9fb23af7bd48e1da4affd5969cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eda4dc3d3d5dbd5d27a2e2e12e109d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4eda4dc3d3d5dbd5d27a2e2e12e109d4"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>IBO</b></td></tr>
+<tr class="memitem:a4eda4dc3d3d5dbd5d27a2e2e12e109d4"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a4eda4dc3d3d5dbd5d27a2e2e12e109d4">IBO</a></td></tr>
 <tr class="separator:a4eda4dc3d3d5dbd5d27a2e2e12e109d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a067fc323ece09a8711e8651bc63e25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a067fc323ece09a8711e8651bc63e25"></a>
-GLsizei&#160;</td><td class="memItemRight" valign="bottom"><b>IBOsize</b></td></tr>
+<tr class="memitem:a9a067fc323ece09a8711e8651bc63e25"><td class="memItemLeft" align="right" valign="top">GLsizei&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a9a067fc323ece09a8711e8651bc63e25">IBOsize</a></td></tr>
 <tr class="separator:a9a067fc323ece09a8711e8651bc63e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a364403fc4940ea2137d0a1e4f6804271"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a364403fc4940ea2137d0a1e4f6804271"></a>
-<a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html">DrawElementsIndirectCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>indirectData</b></td></tr>
+<tr class="memitem:a364403fc4940ea2137d0a1e4f6804271"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d3d/class_render_object.html#a8b0c9652779e08991bec589380d32317">DrawElementsIndirectCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a364403fc4940ea2137d0a1e4f6804271">indirectData</a></td></tr>
 <tr class="separator:a364403fc4940ea2137d0a1e4f6804271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> class. </p>
+<p>This abstract class is used to set and retrieve properties of all objects to be rendered on the screen. Every object to be rendered, 2D or 3D is a child of this class. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a947736621128d42275d421f263dcd6de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RenderObject::RenderObject </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> class copy constructor. </p>
+<p>Copies all the variables and all the buffers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Address of the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../df/dd4/_render_object_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../df/dd4/_render_object_8cpp_source.html">RenderObject.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22bb7fdc3378c20f65f7a6fdb2f251c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RenderObject::RenderObject </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; GLfloat &gt; *&#160;</td>
+          <td class="paramname"><em>vertexData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; GLuint &gt; *&#160;</td>
+          <td class="paramname"><em>indexData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> constructor. </p>
+<p>Creates an object from 2 vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertexData</td><td>Data passed to the GL_ARRAY_BUFFER - vertex coordinates. </td></tr>
+    <tr><td class="paramname">indexData</td><td>Data passed to the GL_ELEMENT_ARRAY_BUFFER - vertex indices. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../df/dd4/_render_object_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../df/dd4/_render_object_8cpp_source.html">RenderObject.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8b53b046a2fb0a0b35f25b2413a6d0dd"></a>
+<a class="anchor" id="a357c1b160d8154ea8d99d93e3b553bef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderObject::handle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> event handle. </p>
+<p>Handles user input. </p>
+
+<p>Definition at line <a class="el" href="../../df/dd4/_render_object_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../df/dd4/_render_object_8cpp_source.html">RenderObject.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a325a9a6d92bdfd0f015aa165b94e7051"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a> &amp; RenderObject::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> class assignment operator. </p>
+<p>Copies all the variables and all the buffers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Address of the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Address of the new <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a>. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../df/dd4/_render_object_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../df/dd4/_render_object_8cpp_source.html">RenderObject.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a912d50d2aa809fffa14d12aa36602164"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -206,7 +332,7 @@ GLsizei&#160;</td><td class="memItemRight" valign="bottom"><b>IBOsize</b></td></
           <td class="memname">void RenderObject::render </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d3/d8a/class_program.html">Program</a> *const&#160;</td>
-          <td class="paramname"><em>shaders</em>, </td>
+          <td class="paramname"><em>prg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -232,16 +358,249 @@ GLsizei&#160;</td><td class="memItemRight" valign="bottom"><b>IBOsize</b></td></
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Renders the object. </p>
+<p>Must be called on every iteration of the main loop, otherwise the object is not shown/dissappears. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prg</td><td>A shader program to use. </td></tr>
+    <tr><td class="paramname">viewMatrix</td><td>A view matrix to use. </td></tr>
+    <tr><td class="paramname">projectionMatrix</td><td>A projection matrix to use </td></tr>
+  </table>
+  </dd>
+</dl>
 <p>&lt; Compute ModelViewProjection matrix, get it to GLSL</p>
 <p>&lt; Get the information about the vertices to GLSL</p>
 <p>&lt; Get the render information to graphics</p>
 <p>&lt; Draw from Draw Indirect Buffer Object </p>
 
+<p>Definition at line <a class="el" href="../../df/dd4/_render_object_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../df/dd4/_render_object_8cpp_source.html">RenderObject.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f86d708d099fbca27c008133600c17a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderObject::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update function. </p>
+<p>Must be called on every iteration of the main loop if the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> is to do somethink. </p>
+
+<p>Definition at line <a class="el" href="../../df/dd4/_render_object_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../df/dd4/_render_object_8cpp_source.html">RenderObject.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa172793458c130dbde225a33b8ffb794"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint RenderObject::EBO</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index of the GL_ELEMENT_ARRAY_BUFFER. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00076">76</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af54f9fb23af7bd48e1da4affd5969cc7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLsizei RenderObject::EBOsize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Size of the GL_ELEMENT_ARRAY_BUFFER. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4eda4dc3d3d5dbd5d27a2e2e12e109d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint RenderObject::IBO</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index of the GL_DRAW_INDIRECT_BUFFER. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a067fc323ece09a8711e8651bc63e25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLsizei RenderObject::IBOsize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Size of the GL_DRAW_INDIRECT_BUFFER. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a364403fc4940ea2137d0a1e4f6804271"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d3d/class_render_object.html#a8b0c9652779e08991bec589380d32317">DrawElementsIndirectCommand</a>* RenderObject::indirectData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Command structure used to draw the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> indirectly. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00080">80</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88d2c19b55190f03b4dc1c45418edbb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::mat4 RenderObject::orientation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Orientation of the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> represented by a matrix </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5bdae8aa0b40da72f159dab1f85b0c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::mat4 RenderObject::position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Position of the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> represented by a matrix </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff9e7da04cca0160ffde9a160b9f3cb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint RenderObject::VBO</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index of the GL_ARRAY_BUFFER. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00074">74</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02e939a3b82e4888102ea6c35fb94e09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLsizei RenderObject::VBOsize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Size of the GL_ARRAY_BUFFER. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a></li>
-<li>RenderObject.cpp</li>
+<li><a class="el" href="../../df/dd4/_render_object_8cpp_source.html">RenderObject.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -249,7 +608,7 @@ GLsizei&#160;</td><td class="memItemRight" valign="bottom"><b>IBOsize</b></td></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a></li>
-    <li class="footer">Generated on Sun Jan 5 2014 21:20:57 for OpenStrategia by
+    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

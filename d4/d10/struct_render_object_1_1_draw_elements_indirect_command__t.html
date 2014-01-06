@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('d4/d10/struct_render_object_1_1_draw_e
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,25 +110,105 @@ $(document).ready(function(){initNavTree('d4/d10/struct_render_object_1_1_draw_e
 <div class="title">RenderObject::DrawElementsIndirectCommand_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Structure used to draw the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> indirectly.  
+ <a href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a0a08e5e3a2ea1f8ba493747ab7537b77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a08e5e3a2ea1f8ba493747ab7537b77"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>elementCount</b></td></tr>
+<tr class="memitem:a0a08e5e3a2ea1f8ba493747ab7537b77"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#a0a08e5e3a2ea1f8ba493747ab7537b77">elementCount</a></td></tr>
 <tr class="separator:a0a08e5e3a2ea1f8ba493747ab7537b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2c528b777525a7d19f5eb858d2d3aab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2c528b777525a7d19f5eb858d2d3aab"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>primCount</b></td></tr>
+<tr class="memitem:aa2c528b777525a7d19f5eb858d2d3aab"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#aa2c528b777525a7d19f5eb858d2d3aab">primCount</a></td></tr>
 <tr class="separator:aa2c528b777525a7d19f5eb858d2d3aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90f9b70166ca26b9173fd83661cf8de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad90f9b70166ca26b9173fd83661cf8de"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>firstIndex</b></td></tr>
+<tr class="memitem:ad90f9b70166ca26b9173fd83661cf8de"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#ad90f9b70166ca26b9173fd83661cf8de">firstIndex</a></td></tr>
 <tr class="separator:ad90f9b70166ca26b9173fd83661cf8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3399f2b1cfcd80ea53e3a6693266754"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3399f2b1cfcd80ea53e3a6693266754"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>baseVertex</b></td></tr>
+<tr class="memitem:ac3399f2b1cfcd80ea53e3a6693266754"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#ac3399f2b1cfcd80ea53e3a6693266754">baseVertex</a></td></tr>
 <tr class="separator:ac3399f2b1cfcd80ea53e3a6693266754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28f03aa25fdfad08612a56bc4227e869"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28f03aa25fdfad08612a56bc4227e869"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>baseInstance</b></td></tr>
+<tr class="memitem:a28f03aa25fdfad08612a56bc4227e869"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#a28f03aa25fdfad08612a56bc4227e869">baseInstance</a></td></tr>
 <tr class="separator:a28f03aa25fdfad08612a56bc4227e869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Structure used to draw the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> indirectly. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a28f03aa25fdfad08612a56bc4227e869"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint RenderObject::DrawElementsIndirectCommand_t::baseInstance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Instance starting offset. Leave 0 unless you know what you are doing. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3399f2b1cfcd80ea53e3a6693266754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint RenderObject::DrawElementsIndirectCommand_t::baseVertex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Vertex starting offset. Leave 0 unless you know what you are doing. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00070">70</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a08e5e3a2ea1f8ba493747ab7537b77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint RenderObject::DrawElementsIndirectCommand_t::elementCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of vertices single object has. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad90f9b70166ca26b9173fd83661cf8de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint RenderObject::DrawElementsIndirectCommand_t::firstIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Index starting offset. Leave 0 unless you know what you are doing. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00069">69</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2c528b777525a7d19f5eb858d2d3aab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint RenderObject::DrawElementsIndirectCommand_t::primCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of instances of the object to draw. Leave 1 unless you know what you are doing. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d59/_render_object_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="../../d2/d59/_render_object_8hpp_source.html">RenderObject.hpp</a></li>
 </ul>
@@ -138,7 +218,7 @@ GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>baseInstance</b></t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a></li><li class="navelem"><a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html">DrawElementsIndirectCommand_t</a></li>
-    <li class="footer">Generated on Sun Jan 5 2014 21:20:57 for OpenStrategia by
+    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

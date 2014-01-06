@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('d1/d51/class_shader.html','../../');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,19 +111,29 @@ $(document).ready(function(){initNavTree('d1/d51/class_shader.html','../../');})
 <div class="title">Shader Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="../../d1/d51/class_shader.html" title="Shader class. ">Shader</a> class.  
+ <a href="../../d1/d51/class_shader.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d2/d73/_shader_8hpp_source.html">Shader.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7bcdedb04eeffcd1171ac497c892b7dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d51/class_shader.html#a7bcdedb04eeffcd1171ac497c892b7dd">Shader</a> (std::string name, const GLenum shaderType)</td></tr>
+<tr class="memdesc:a7bcdedb04eeffcd1171ac497c892b7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a shader.  <a href="#a7bcdedb04eeffcd1171ac497c892b7dd">More...</a><br/></td></tr>
 <tr class="separator:a7bcdedb04eeffcd1171ac497c892b7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9b651b3ababb5f722450a7fca957fc37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b651b3ababb5f722450a7fca957fc37"></a>
-const GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>shaderID</b></td></tr>
+<tr class="memitem:a9b651b3ababb5f722450a7fca957fc37"><td class="memItemLeft" align="right" valign="top">const GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d51/class_shader.html#a9b651b3ababb5f722450a7fca957fc37">shaderID</a></td></tr>
 <tr class="separator:a9b651b3ababb5f722450a7fca957fc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d1/d51/class_shader.html" title="Shader class. ">Shader</a> class. </p>
+<p>This class is used to load, store and use individual shaders. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d73/_shader_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d2/d73/_shader_8hpp_source.html">Shader.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7bcdedb04eeffcd1171ac497c892b7dd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,16 +157,43 @@ const GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>shaderID</b><
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Loads a shader. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Filename with extension, relative to the shaders subdir. </td></tr>
+    <tr><td class="paramname">shaderType</td><td>Type of the shader passed to glCreateShader() - see OpenGL documentation </td></tr>
+  </table>
+  </dd>
+</dl>
 <p>&lt; Load the shader code from the file</p>
 <p>&lt; Handle the code to OpenGL and compile it</p>
 <p>&lt; Verify the result</p>
 <p>&lt; Error </p>
 
+<p>Definition at line <a class="el" href="../../d5/d16/_shader_8cpp_source.html#l00005">5</a> of file <a class="el" href="../../d5/d16/_shader_8cpp_source.html">Shader.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a9b651b3ababb5f722450a7fca957fc37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const GLuint Shader::shaderID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ID of the shader. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d73/_shader_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../d2/d73/_shader_8hpp_source.html">Shader.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d2/d73/_shader_8hpp_source.html">Shader.hpp</a></li>
-<li>Shader.cpp</li>
+<li><a class="el" href="../../d5/d16/_shader_8cpp_source.html">Shader.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -164,7 +201,7 @@ const GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>shaderID</b><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d51/class_shader.html">Shader</a></li>
-    <li class="footer">Generated on Sun Jan 5 2014 21:20:57 for OpenStrategia by
+    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

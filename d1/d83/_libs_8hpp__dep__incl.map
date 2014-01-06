@@ -1,9 +1,16 @@
 <map id="Libs.hpp" name="Libs.hpp">
-<area shape="rect" id="node2" href="$d4/d13/_main_8hpp.html" title="Main.hpp" alt="" coords="271,155,346,181"/>
-<area shape="rect" id="node3" href="$d2/d73/_shader_8hpp.html" title="Shader.hpp" alt="" coords="30,80,118,107"/>
-<area shape="rect" id="node4" href="$d9/dd5/_program_8hpp.html" title="Program.hpp" alt="" coords="142,80,238,107"/>
-<area shape="rect" id="node5" href="$d4/d6a/_camera_8hpp.html" title="Camera.hpp" alt="" coords="263,80,354,107"/>
-<area shape="rect" id="node6" href="$d2/d59/_render_object_8hpp.html" title="RenderObject.hpp" alt="" coords="379,80,505,107"/>
-<area shape="rect" id="node7" href="$de/d47/_render_object2_d_8hpp.html" title="RenderObject2D.hpp" alt="" coords="529,80,671,107"/>
-<area shape="rect" id="node8" href="$de/dc9/_render_object3_d_8hpp.html" title="RenderObject3D.hpp" alt="" coords="696,80,838,107"/>
+<area shape="rect" id="node2" href="$d4/d13/_main_8hpp.html" title="Main header file. " alt="" coords="367,155,441,181"/>
+<area shape="rect" id="node10" href="$d2/d73/_shader_8hpp.html" title="File with Shader class. " alt="" coords="125,80,213,107"/>
+<area shape="rect" id="node11" href="$d9/dd5/_program_8hpp.html" title="File with Program class. " alt="" coords="237,80,333,107"/>
+<area shape="rect" id="node12" href="$d4/d6a/_camera_8hpp.html" title="File with Camera class. " alt="" coords="358,80,449,107"/>
+<area shape="rect" id="node13" href="$d2/d59/_render_object_8hpp.html" title="File with RenderObject class. " alt="" coords="474,80,600,107"/>
+<area shape="rect" id="node14" href="$de/d47/_render_object2_d_8hpp.html" title="File with RenderObject2D class. " alt="" coords="625,80,767,107"/>
+<area shape="rect" id="node15" href="$de/dc9/_render_object3_d_8hpp.html" title="File with RenderObject3D class. " alt="" coords="791,80,933,107"/>
+<area shape="rect" id="node3" href="$d1/d33/_camera_8cpp_source.html" title="Camera.cpp" alt="" coords="5,229,96,256"/>
+<area shape="rect" id="node4" href="$d5/d12/_main_8cpp_source.html" title="Main.cpp" alt="" coords="121,229,196,256"/>
+<area shape="rect" id="node5" href="$df/db8/_program_8cpp_source.html" title="Program.cpp" alt="" coords="220,229,316,256"/>
+<area shape="rect" id="node6" href="$df/dd4/_render_object_8cpp_source.html" title="RenderObject.cpp" alt="" coords="341,229,467,256"/>
+<area shape="rect" id="node7" href="$dd/d8f/_render_object2_d_8cpp_source.html" title="RenderObject2D.cpp" alt="" coords="491,229,633,256"/>
+<area shape="rect" id="node8" href="$dd/df5/_render_object3_d_8cpp_source.html" title="RenderObject3D.cpp" alt="" coords="658,229,800,256"/>
+<area shape="rect" id="node9" href="$d5/d16/_shader_8cpp_source.html" title="Shader.cpp" alt="" coords="825,229,913,256"/>
 </map>

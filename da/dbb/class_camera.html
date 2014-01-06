@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('da/dbb/class_camera.html','../../');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,33 +106,255 @@ $(document).ready(function(){initNavTree('da/dbb/class_camera.html','../../');})
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d7/d04/class_camera-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Camera Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="../../da/dbb/class_camera.html" title="Camera class. ">Camera</a> class.  
+ <a href="../../da/dbb/class_camera.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e39d35127e2fcbef7156967aa466328"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e39d35127e2fcbef7156967aa466328"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Camera</b> (float FOV, float aspect, float speed, glm::vec3 position, glm::quat orientation)</td></tr>
+<tr class="memitem:a1e39d35127e2fcbef7156967aa466328"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a1e39d35127e2fcbef7156967aa466328">Camera</a> (float FOV, float aspect, float <a class="el" href="../../da/dbb/class_camera.html#a2960f533df18fe6d7d574c316c6d217a">speed</a>, glm::vec3 <a class="el" href="../../da/dbb/class_camera.html#a13b7748a41b744307fc056dcd00b69b2">position</a>, glm::quat <a class="el" href="../../da/dbb/class_camera.html#a25824338566a45f0ca1515ebb489c571">orientation</a>)</td></tr>
+<tr class="memdesc:a1e39d35127e2fcbef7156967aa466328"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/dbb/class_camera.html" title="Camera class. ">Camera</a> class constructor.  <a href="#a1e39d35127e2fcbef7156967aa466328">More...</a><br/></td></tr>
 <tr class="separator:a1e39d35127e2fcbef7156967aa466328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9d830daaca9bff03bea3edda4abb482"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9d830daaca9bff03bea3edda4abb482"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> ()</td></tr>
+<tr class="memitem:ad9d830daaca9bff03bea3edda4abb482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#ad9d830daaca9bff03bea3edda4abb482">handle</a> ()</td></tr>
+<tr class="memdesc:ad9d830daaca9bff03bea3edda4abb482"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/dbb/class_camera.html" title="Camera class. ">Camera</a> event handle.  <a href="#ad9d830daaca9bff03bea3edda4abb482">More...</a><br/></td></tr>
 <tr class="separator:ad9d830daaca9bff03bea3edda4abb482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1897942d0ccf91052386388a497349f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera</a> ()</td></tr>
+<tr class="memdesc:ad1897942d0ccf91052386388a497349f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/dbb/class_camera.html" title="Camera class. ">Camera</a> class destructor.  <a href="#ad1897942d0ccf91052386388a497349f">More...</a><br/></td></tr>
+<tr class="separator:ad1897942d0ccf91052386388a497349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9354e0c084511bc2ca5bd31cad2e32c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9354e0c084511bc2ca5bd31cad2e32c5"></a>
-std::atomic&lt; glm::mat4 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>view</b></td></tr>
+<tr class="memitem:a9354e0c084511bc2ca5bd31cad2e32c5"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; glm::mat4 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a9354e0c084511bc2ca5bd31cad2e32c5">view</a></td></tr>
 <tr class="separator:a9354e0c084511bc2ca5bd31cad2e32c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a423c862b7ec43cbac2a1ea9df870faa8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a423c862b7ec43cbac2a1ea9df870faa8"></a>
-std::atomic&lt; glm::mat4 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>projection</b></td></tr>
+<tr class="memitem:a423c862b7ec43cbac2a1ea9df870faa8"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; glm::mat4 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a423c862b7ec43cbac2a1ea9df870faa8">projection</a></td></tr>
 <tr class="separator:a423c862b7ec43cbac2a1ea9df870faa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a13b7748a41b744307fc056dcd00b69b2"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; glm::vec3 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a13b7748a41b744307fc056dcd00b69b2">position</a></td></tr>
+<tr class="separator:a13b7748a41b744307fc056dcd00b69b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25824338566a45f0ca1515ebb489c571"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; glm::quat * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a25824338566a45f0ca1515ebb489c571">orientation</a></td></tr>
+<tr class="separator:a25824338566a45f0ca1515ebb489c571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2960f533df18fe6d7d574c316c6d217a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a2960f533df18fe6d7d574c316c6d217a">speed</a></td></tr>
+<tr class="separator:a2960f533df18fe6d7d574c316c6d217a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../da/dbb/class_camera.html" title="Camera class. ">Camera</a> class. </p>
+<p>This class completely handles the camera and computes all the matrices based on its properties. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a1e39d35127e2fcbef7156967aa466328"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Camera::Camera </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>FOV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>aspect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::quat&#160;</td>
+          <td class="paramname"><em>orientation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/dbb/class_camera.html" title="Camera class. ">Camera</a> class constructor. </p>
+<p>Sets the initial values of the camera as well. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">FOV</td><td>Field of view used for the camera. </td></tr>
+    <tr><td class="paramname">aspect</td><td>Aspect ratio of the screen. Usually width / height. </td></tr>
+    <tr><td class="paramname">speed</td><td>Movement speed. </td></tr>
+    <tr><td class="paramname">position</td><td>Position represented by a vector. </td></tr>
+    <tr><td class="paramname">orientation</td><td>Orientation represented by a quaternion. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d1/d33/_camera_8cpp_source.html#l00005">5</a> of file <a class="el" href="../../d1/d33/_camera_8cpp_source.html">Camera.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1897942d0ccf91052386388a497349f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Camera::~Camera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/dbb/class_camera.html" title="Camera class. ">Camera</a> class destructor. </p>
+<p>Deletes all dynamically allocated variables. </p>
+
+<p>Definition at line <a class="el" href="../../d1/d33/_camera_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d1/d33/_camera_8cpp_source.html">Camera.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad9d830daaca9bff03bea3edda4abb482"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera::handle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/dbb/class_camera.html" title="Camera class. ">Camera</a> event handle. </p>
+<p>Handles user input (Cursor and keyboard). <a class="el" href="../../da/dbb/class_camera.html" title="Camera class. ">Camera</a> is moved when Cursor touches screen edge or user presses arrow key. </p>
+
+<p>Definition at line <a class="el" href="../../d1/d33/_camera_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../d1/d33/_camera_8cpp_source.html">Camera.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a25824338566a45f0ca1515ebb489c571"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;glm::quat*&gt; Camera::orientation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Orientation of the camera represented by a quaternion </p>
+
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a13b7748a41b744307fc056dcd00b69b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;glm::vec3*&gt; Camera::position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Position of the camera represented by a matrix. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a423c862b7ec43cbac2a1ea9df870faa8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;glm::mat4*&gt; Camera::projection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Projection matrix </p>
+
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2960f533df18fe6d7d574c316c6d217a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::speed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Movement speed. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9354e0c084511bc2ca5bd31cad2e32c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;glm::mat4*&gt; Camera::view</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>View matrix </p>
+
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a></li>
-<li>Camera.cpp</li>
+<li><a class="el" href="../../d1/d33/_camera_8cpp_source.html">Camera.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -140,7 +362,7 @@ std::atomic&lt; glm::mat4 * &gt;&#160;</td><td class="memItemRight" valign="bott
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/dbb/class_camera.html">Camera</a></li>
-    <li class="footer">Generated on Sun Jan 5 2014 21:20:57 for OpenStrategia by
+    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

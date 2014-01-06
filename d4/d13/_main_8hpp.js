@@ -2,7 +2,6 @@ var _main_8hpp =
 [
     [ "DELTA", "d4/d13/_main_8hpp.html#a11ad41d723292a6437dbcefe8aaba53f", null ],
     [ "ERROR", "d4/d13/_main_8hpp.html#a8101ed0e9bd079849826e3f05914d436", null ],
-    [ "FRAMERATE", "d4/d13/_main_8hpp.html#a5be13774fdbbb11ed5e3c906b2800492", null ],
     [ "HEIGHT", "d4/d13/_main_8hpp.html#a4e81322eb1085aca9cd7c5527f5e4c6b", null ],
     [ "MAINCAM", "d4/d13/_main_8hpp.html#a47f1cb885b4d6b283d2e7c41c4c1f8c7", null ],
     [ "PAUSE", "d4/d13/_main_8hpp.html#ac8f3810dbdc4637d4b55e1cf2b28a56a", null ],
