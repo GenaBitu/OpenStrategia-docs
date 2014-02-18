@@ -122,6 +122,7 @@ $(document).ready(function(){initNavTree('d5/d12/_main_8cpp_source.html','../../
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">int</span> main()</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// GLFW, GLEW and OpenGL Initialization</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span>(glfwInit() != GL_TRUE)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d4/d13/_main_8hpp.html#a8101ed0e9bd079849826e3f05914d436">ERROR</a> &lt;&lt; <span class="stringliteral">&quot;Failed to Initialize GLFW.&quot;</span> &lt;&lt; endl;</div>
@@ -158,74 +159,86 @@ $(document).ready(function(){initNavTree('d5/d12/_main_8cpp_source.html','../../
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    glEnable(GL_DEPTH_TEST);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    glDepthFunc(GL_LESS);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Loading shaders</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d3/d8a/class_program.html">Program</a>* shaders = <span class="keyword">new</span> <a class="code" href="../../d3/d8a/class_program.html">Program</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    shaders-&gt;<a class="code" href="../../d3/d8a/class_program.html#aceb6b3995275213f709c10d941762806">AddShader</a>(<span class="stringliteral">&quot;Vertex.glsl&quot;</span>, GL_VERTEX_SHADER);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    shaders-&gt;<a class="code" href="../../d3/d8a/class_program.html#aceb6b3995275213f709c10d941762806">AddShader</a>(<span class="stringliteral">&quot;Fragment.glsl&quot;</span>, GL_FRAGMENT_SHADER);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    shaders-&gt;<a class="code" href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98">Link</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    glfwSetTime(0);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    glfwSwapBuffers(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    glfwPollEvents();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                        vector&lt;GLfloat&gt; vData = {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                -1.0f,-1.0f,-1.0f,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                -1.0f,-1.0f, 1.0f,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                -1.0f, 1.0f,-1.0f,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        -1.0f, 1.0f, 1.0f,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                 1.0f, 1.0f,-1.0f,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                 1.0f,-1.0f, 1.0f,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                 1.0f,-1.0f,-1.0f,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                 1.0f, 1.0f, 1.0f,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        };</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                                        vector&lt;GLfloat&gt; vData2 = {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                -0.5f,-1.0f, 0.0f,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                 1.0f,-1.0f, 0.0f,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                 1.0f, 1.0f, 0.0f,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        };</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                        vector&lt;GLuint&gt; iData = {0,1,2,1,3,2,4,7,5,6,4,5,1,5,7,1,7,3,2,4,0,6,0,4,3,7,4,3,4,2,1,5,6,1,6,0};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                                        vector&lt;GLuint&gt; iData2 = {0,1,2};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                                        <span class="comment">//RenderObject3D* objekt = new RenderObject3D(&amp;vData, &amp;iData);</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                                        <span class="comment">//RenderObject2D* objekt2 = new RenderObject2D(&amp;vData2, &amp;iData2);</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                                        <a class="code" href="../../d6/dfb/class_render_object3_d.html">RenderObject3D</a>* objekt3 = <span class="keyword">new</span> <a class="code" href="../../d6/dfb/class_render_object3_d.html">RenderObject3D</a>(<span class="stringliteral">&quot;tank.obj&quot;</span>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">while</span>(glfwWindowShouldClose(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>) == GL_FALSE) </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                                        <span class="comment">//objekt-&gt;render(shaders, MAINCAM);</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                                        <span class="comment">//objekt2-&gt;render(shaders);</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                                        objekt3-&gt;<a class="code" href="../../d6/dfb/class_render_object3_d.html#afa77311ec94079d3b0477fbcd4ba6dd1">render</a>(shaders, <a class="code" href="../../d4/d13/_main_8hpp.html#a47f1cb885b4d6b283d2e7c41c4c1f8c7">MAINCAM</a>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        glfwGetCursorPos(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, &amp;<a class="code" href="../../d4/d13/_main_8hpp.html#a0ddef27a2ad7bdeec713934c71fbe7f5">XCURSOR</a>, &amp;<a class="code" href="../../d4/d13/_main_8hpp.html#a9b3dc580b7ef869a0b3797610f704f52">YCURSOR</a>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span>(glfwGetKey(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GLFW_KEY_ESCAPE) == GLFW_PRESS)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            glfwSetWindowShouldClose(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GL_TRUE);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span>((glfwGetKey(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GLFW_KEY_LEFT) == GLFW_PRESS) or (glfwGetKey(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GLFW_KEY_RIGHT) == GLFW_PRESS) or (glfwGetKey(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GLFW_KEY_UP) == GLFW_PRESS) or (glfwGetKey(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GLFW_KEY_DOWN) == GLFW_PRESS) or (<a class="code" href="../../d4/d13/_main_8hpp.html#a0ddef27a2ad7bdeec713934c71fbe7f5">XCURSOR</a> &lt; 2) or (<a class="code" href="../../d4/d13/_main_8hpp.html#a9b3dc580b7ef869a0b3797610f704f52">YCURSOR</a> &lt; 2) or (<a class="code" href="../../d4/d13/_main_8hpp.html#a0ddef27a2ad7bdeec713934c71fbe7f5">XCURSOR</a> &gt; (<a class="code" href="../../d4/d13/_main_8hpp.html#a59c3bba4b17cd5e19f149ea175fa6989">WIDTH</a> - 2)) or (<a class="code" href="../../d4/d13/_main_8hpp.html#a9b3dc580b7ef869a0b3797610f704f52">YCURSOR</a> &gt; (<a class="code" href="../../d4/d13/_main_8hpp.html#a4e81322eb1085aca9cd7c5527f5e4c6b">HEIGHT</a> - 2)))</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            thread t(&amp;<a class="code" href="../../da/dbb/class_camera.html#ad9d830daaca9bff03bea3edda4abb482">Camera::handle</a>, <a class="code" href="../../d4/d13/_main_8hpp.html#a47f1cb885b4d6b283d2e7c41c4c1f8c7">MAINCAM</a>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            t.detach();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="../../d4/d13/_main_8hpp.html#a11ad41d723292a6437dbcefe8aaba53f">DELTA</a> = glfwGetTime();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        glfwSetTime(0);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        glfwSwapBuffers(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        glfwPollEvents();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">//delete objekt;</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">//delete objekt2;</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">delete</span> objekt3;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">delete</span> shaders;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../d4/d13/_main_8hpp.html#a47f1cb885b4d6b283d2e7c41c4c1f8c7">MAINCAM</a>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    glfwTerminate();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    shaders-&gt;<a class="code" href="../../d3/d8a/class_program.html#aceb6b3995275213f709c10d941762806">AddShader</a>(<span class="stringliteral">&quot;blinn.vertex.glsl&quot;</span>, GL_VERTEX_SHADER);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    shaders-&gt;<a class="code" href="../../d3/d8a/class_program.html#aceb6b3995275213f709c10d941762806">AddShader</a>(<span class="stringliteral">&quot;blinn.fragment.glsl&quot;</span>, GL_FRAGMENT_SHADER);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(glfwWindowShouldClose(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>)) {<span class="keywordflow">return</span> -1;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    shaders-&gt;<a class="code" href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98">Link</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                        glUseProgram(shaders-&gt;<a class="code" href="../../d3/d8a/class_program.html#a93060f681a5ebb794b697dc372706f4e">programID</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Setting up some important variables</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Reset timer and swap buffers, so that the main loop can start immediatelly</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    glfwSetTime(0);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    glfwSwapBuffers(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    glfwPollEvents();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                                        vector&lt;GLfloat&gt; vData = {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                -1.0f,-1.0f,-1.0f,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                -1.0f,-1.0f, 1.0f,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                -1.0f, 1.0f,-1.0f,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        -1.0f, 1.0f, 1.0f,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                 1.0f, 1.0f,-1.0f,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                 1.0f,-1.0f, 1.0f,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                 1.0f,-1.0f,-1.0f,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                 1.0f, 1.0f, 1.0f,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        };</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                                        vector&lt;GLfloat&gt; vData2 = {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                -0.5f,-1.0f, 0.0f,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                 1.0f,-1.0f, 0.0f,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                 1.0f, 1.0f, 0.0f,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        };</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                                        vector&lt;GLuint&gt; iData = {0,1,2,1,3,2,4,7,5,6,4,5,1,5,7,1,7,3,2,4,0,6,0,4,3,7,4,3,4,2,1,5,6,1,6,0};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                                        vector&lt;GLuint&gt; iData2 = {0,1,2};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                        <span class="comment">//RenderObject3D* objekt = new RenderObject3D(&amp;vData, &amp;iData);</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                        <span class="comment">//RenderObject2D* objekt2 = new RenderObject2D(&amp;vData2, &amp;iData2);</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                                        <a class="code" href="../../d6/dfb/class_render_object3_d.html">RenderObject3D</a>* objekt3 = <span class="keyword">new</span> <a class="code" href="../../d6/dfb/class_render_object3_d.html">RenderObject3D</a>(<span class="stringliteral">&quot;tank.obj&quot;</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">while</span>(!glfwWindowShouldClose(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>)) <span class="comment">// Main loop</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="comment">// Rendering</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                                        <span class="comment">//objekt-&gt;render(shaders, MAINCAM);</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                                        <span class="comment">//objekt2-&gt;render(shaders);</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                                        objekt3-&gt;<a class="code" href="../../d6/dfb/class_render_object3_d.html#afa77311ec94079d3b0477fbcd4ba6dd1">render</a>(shaders, <a class="code" href="../../d4/d13/_main_8hpp.html#a47f1cb885b4d6b283d2e7c41c4c1f8c7">MAINCAM</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">// Input handling</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        glfwGetCursorPos(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, &amp;<a class="code" href="../../d4/d13/_main_8hpp.html#a0ddef27a2ad7bdeec713934c71fbe7f5">XCURSOR</a>, &amp;<a class="code" href="../../d4/d13/_main_8hpp.html#a9b3dc580b7ef869a0b3797610f704f52">YCURSOR</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">if</span>(glfwGetKey(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GLFW_KEY_ESCAPE) == GLFW_PRESS)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            glfwSetWindowShouldClose(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GL_TRUE);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span>((glfwGetKey(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GLFW_KEY_LEFT) == GLFW_PRESS) or (glfwGetKey(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GLFW_KEY_RIGHT) == GLFW_PRESS) or (glfwGetKey(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GLFW_KEY_UP) == GLFW_PRESS) or (glfwGetKey(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>, GLFW_KEY_DOWN) == GLFW_PRESS) or (<a class="code" href="../../d4/d13/_main_8hpp.html#a0ddef27a2ad7bdeec713934c71fbe7f5">XCURSOR</a> &lt; 2) or (<a class="code" href="../../d4/d13/_main_8hpp.html#a9b3dc580b7ef869a0b3797610f704f52">YCURSOR</a> &lt; 2) or (<a class="code" href="../../d4/d13/_main_8hpp.html#a0ddef27a2ad7bdeec713934c71fbe7f5">XCURSOR</a> &gt; (<a class="code" href="../../d4/d13/_main_8hpp.html#a59c3bba4b17cd5e19f149ea175fa6989">WIDTH</a> - 2)) or (<a class="code" href="../../d4/d13/_main_8hpp.html#a9b3dc580b7ef869a0b3797610f704f52">YCURSOR</a> &gt; (<a class="code" href="../../d4/d13/_main_8hpp.html#a4e81322eb1085aca9cd7c5527f5e4c6b">HEIGHT</a> - 2)))</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            thread t(&amp;<a class="code" href="../../da/dbb/class_camera.html#ad9d830daaca9bff03bea3edda4abb482">Camera::handle</a>, <a class="code" href="../../d4/d13/_main_8hpp.html#a47f1cb885b4d6b283d2e7c41c4c1f8c7">MAINCAM</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            t.detach();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">// Updating</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">// Timer restart</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="../../d4/d13/_main_8hpp.html#a11ad41d723292a6437dbcefe8aaba53f">DELTA</a> = glfwGetTime();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        glfwSetTime(0);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        glfwSwapBuffers(<a class="code" href="../../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c">WINDOW</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        glfwPollEvents();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">//delete objekt;</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">//delete objekt2;</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">delete</span> objekt3;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">delete</span> shaders;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../d4/d13/_main_8hpp.html#a47f1cb885b4d6b283d2e7c41c4c1f8c7">MAINCAM</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    glfwTerminate();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
 <div class="ttc" id="class_camera_html_ad9d830daaca9bff03bea3edda4abb482"><div class="ttname"><a href="../../da/dbb/class_camera.html#ad9d830daaca9bff03bea3edda4abb482">Camera::handle</a></div><div class="ttdeci">void handle()</div><div class="ttdoc">Camera event handle. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d33/_camera_8cpp_source.html#l00009">Camera.cpp:9</a></div></div>
 <div class="ttc" id="_main_8hpp_html_ac8f3810dbdc4637d4b55e1cf2b28a56a"><div class="ttname"><a href="../../d4/d13/_main_8hpp.html#ac8f3810dbdc4637d4b55e1cf2b28a56a">PAUSE</a></div><div class="ttdeci">int PAUSE</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d12/_main_8cpp_source.html#l00010">Main.cpp:10</a></div></div>
-<div class="ttc" id="class_render_object3_d_html_afa77311ec94079d3b0477fbcd4ba6dd1"><div class="ttname"><a href="../../d6/dfb/class_render_object3_d.html#afa77311ec94079d3b0477fbcd4ba6dd1">RenderObject3D::render</a></div><div class="ttdeci">virtual void render(const Program *const prg, const Camera *const cam) const </div><div class="ttdoc">Renders the 3D object. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/_render_object3_d_8cpp_source.html#l00083">RenderObject3D.cpp:83</a></div></div>
+<div class="ttc" id="class_render_object3_d_html_afa77311ec94079d3b0477fbcd4ba6dd1"><div class="ttname"><a href="../../d6/dfb/class_render_object3_d.html#afa77311ec94079d3b0477fbcd4ba6dd1">RenderObject3D::render</a></div><div class="ttdeci">virtual void render(const Program *const prg, const Camera *const cam) const </div><div class="ttdoc">Renders the 3D object. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/_render_object3_d_8cpp_source.html#l00098">RenderObject3D.cpp:98</a></div></div>
 <div class="ttc" id="_main_8hpp_html"><div class="ttname"><a href="../../d4/d13/_main_8hpp.html">Main.hpp</a></div><div class="ttdoc">Main header file. </div></div>
 <div class="ttc" id="_main_8hpp_html_a47f1cb885b4d6b283d2e7c41c4c1f8c7"><div class="ttname"><a href="../../d4/d13/_main_8hpp.html#a47f1cb885b4d6b283d2e7c41c4c1f8c7">MAINCAM</a></div><div class="ttdeci">Camera * MAINCAM</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d12/_main_8cpp_source.html#l00007">Main.cpp:7</a></div></div>
 <div class="ttc" id="_main_8hpp_html_a59c3bba4b17cd5e19f149ea175fa6989"><div class="ttname"><a href="../../d4/d13/_main_8hpp.html#a59c3bba4b17cd5e19f149ea175fa6989">WIDTH</a></div><div class="ttdeci">int WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d12/_main_8cpp_source.html#l00013">Main.cpp:13</a></div></div>
 <div class="ttc" id="class_camera_html"><div class="ttname"><a href="../../da/dbb/class_camera.html">Camera</a></div><div class="ttdoc">Camera class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d6a/_camera_8hpp_source.html#l00015">Camera.hpp:15</a></div></div>
 <div class="ttc" id="class_render_object3_d_html"><div class="ttname"><a href="../../d6/dfb/class_render_object3_d.html">RenderObject3D</a></div><div class="ttdoc">RenderObject3D class. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dc9/_render_object3_d_8hpp_source.html#l00015">RenderObject3D.hpp:15</a></div></div>
-<div class="ttc" id="class_program_html_acbba030aed223ab4705d8386ffaabd98"><div class="ttname"><a href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98">Program::Link</a></div><div class="ttdeci">void Link() const </div><div class="ttdef"><b>Definition:</b> <a href="../../df/db8/_program_8cpp_source.html#l00013">Program.cpp:13</a></div></div>
+<div class="ttc" id="class_program_html_acbba030aed223ab4705d8386ffaabd98"><div class="ttname"><a href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98">Program::Link</a></div><div class="ttdeci">void Link() const </div><div class="ttdoc">Links shader program. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/db8/_program_8cpp_source.html#l00013">Program.cpp:13</a></div></div>
+<div class="ttc" id="class_program_html_a93060f681a5ebb794b697dc372706f4e"><div class="ttname"><a href="../../d3/d8a/class_program.html#a93060f681a5ebb794b697dc372706f4e">Program::programID</a></div><div class="ttdeci">const GLuint programID</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd5/_program_8hpp_source.html#l00019">Program.hpp:19</a></div></div>
 <div class="ttc" id="_main_8hpp_html_a4e81322eb1085aca9cd7c5527f5e4c6b"><div class="ttname"><a href="../../d4/d13/_main_8hpp.html#a4e81322eb1085aca9cd7c5527f5e4c6b">HEIGHT</a></div><div class="ttdeci">int HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d12/_main_8cpp_source.html#l00014">Main.cpp:14</a></div></div>
 <div class="ttc" id="_main_8hpp_html_a9b3dc580b7ef869a0b3797610f704f52"><div class="ttname"><a href="../../d4/d13/_main_8hpp.html#a9b3dc580b7ef869a0b3797610f704f52">YCURSOR</a></div><div class="ttdeci">double YCURSOR</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d12/_main_8cpp_source.html#l00012">Main.cpp:12</a></div></div>
 <div class="ttc" id="_main_8hpp_html_a8101ed0e9bd079849826e3f05914d436"><div class="ttname"><a href="../../d4/d13/_main_8hpp.html#a8101ed0e9bd079849826e3f05914d436">ERROR</a></div><div class="ttdeci">std::ofstream ERROR</div></div>
@@ -241,7 +254,7 @@ $(document).ready(function(){initNavTree('d5/d12/_main_8cpp_source.html','../../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Main.cpp</b></li>
-    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
+    <li class="footer">Generated on Tue Feb 18 2014 20:53:23 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

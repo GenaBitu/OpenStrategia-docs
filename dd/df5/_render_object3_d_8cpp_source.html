@@ -109,100 +109,121 @@ $(document).ready(function(){initNavTree('dd/df5/_render_object3_d_8cpp_source.h
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using namespace </span>glm;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;RenderObject3D::RenderObject3D()        <span class="comment">//DEBUG ONLY</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d6/dfb/class_render_object3_d.html#ad7171038923846ea65e10c6fe3fc9f32">    5</a></span>&#160;<a class="code" href="../../d6/dfb/class_render_object3_d.html#ad7171038923846ea65e10c6fe3fc9f32">RenderObject3D::RenderObject3D</a>() : NBO(0), NBOsize(0)        <span class="comment">//DEBUG ONLY</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">const</span> GLfloat vertex_buffer_data[] = {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                -1.0f,-1.0f,-1.0f,</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                -1.0f,-1.0f, 1.0f,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                -1.0f, 1.0f,-1.0f,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        -1.0f, 1.0f, 1.0f,</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                 1.0f, 1.0f,-1.0f,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                 1.0f,-1.0f, 1.0f,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                 1.0f,-1.0f,-1.0f,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                 1.0f, 1.0f, 1.0f,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        };</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">const</span> GLuint element_buffer_data[] = {0,1,2,1,3,2,4,7,5,6,4,5,1,5,7,1,7,3,2,4,0,6,0,4,3,7,4,3,4,2,1,5,6,1,6,0};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        glBindBuffer(GL_ARRAY_BUFFER, VBO);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        glBufferData(GL_ARRAY_BUFFER, <span class="keyword">sizeof</span>(vertex_buffer_data), vertex_buffer_data, GL_STATIC_DRAW);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        glBufferData(GL_ELEMENT_ARRAY_BUFFER, <span class="keyword">sizeof</span>(element_buffer_data), element_buffer_data, GL_STATIC_DRAW);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        indirectData-&gt;elementCount = 36;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d6/dfb/class_render_object3_d.html#a0069faf99f9e94d5a2449cc2b9e046f3">   25</a></span>&#160;RenderObject3D::RenderObject3D(std::vector&lt;GLfloat&gt;* vertexData, std::vector&lt;GLuint&gt;* indexData) : <a class="code" href="../../d8/d3d/class_render_object.html">RenderObject</a>(vertexData, indexData) {}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d6/dfb/class_render_object3_d.html#a80c2072736f4cc1b9671d006bab5fbfa">   27</a></span>&#160;RenderObject3D::RenderObject3D(std::string name) : <a class="code" href="../../d8/d3d/class_render_object.html">RenderObject</a>()</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    name = <span class="stringliteral">&quot;models/&quot;</span> + name;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    vector&lt;GLuint&gt; vertexIndices, normalIndices;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    vector&lt;vec3&gt; vertices;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    vector&lt;vec3&gt; normals;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    ifstream file(name);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">string</span> word;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    vec3 vertex;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    GLuint index;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span>(!file.is_open())</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="../../d4/d13/_main_8hpp.html#a8101ed0e9bd079849826e3f05914d436">ERROR</a> &lt;&lt; <span class="stringliteral">&quot;Failed to open file: &quot;</span> &lt;&lt; name &lt;&lt; endl;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">while</span>(!file.eof())</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        file &gt;&gt; word;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span>((word == <span class="stringliteral">&quot;#&quot;</span>) or (word == <span class="stringliteral">&quot;o&quot;</span>) or (word == <span class="stringliteral">&quot;s&quot;</span>))</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            file.ignore(std::numeric_limits&lt;std::streamsize&gt;::max(), <span class="charliteral">&#39;\n&#39;</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span>(word == <span class="stringliteral">&quot;vn&quot;</span>)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            file &gt;&gt; vertex.x &gt;&gt; vertex.y &gt;&gt; vertex.z;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            normals.push_back(vertex);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span>(word == <span class="stringliteral">&quot;v&quot;</span>)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            file &gt;&gt; vertex.x &gt;&gt; vertex.y &gt;&gt; vertex.z;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            vertices.push_back(vertex);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span>(word == <span class="stringliteral">&quot;f&quot;</span>)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 3; i++)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                file &gt;&gt; word;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                index = stoul(word.substr(0, word.find(<span class="stringliteral">&quot;//&quot;</span>)));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                vertexIndices.push_back(index);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                word.erase(0, word.find(<span class="stringliteral">&quot;//&quot;</span>) + 2);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                index = stoul(word);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                normalIndices.push_back(index);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, <a class="code" href="../../d8/d3d/class_render_object.html#aff9e7da04cca0160ffde9a160b9f3cb3">VBO</a>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    glBufferData(GL_ARRAY_BUFFER, vertices.size() * <span class="keyword">sizeof</span>(vec3), vertices.data(), GL_STATIC_DRAW);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, <a class="code" href="../../d8/d3d/class_render_object.html#aa172793458c130dbde225a33b8ffb794">EBO</a>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    glBufferData(GL_ELEMENT_ARRAY_BUFFER, vertexIndices.size() * <span class="keyword">sizeof</span>(GLuint), vertexIndices.data(), GL_STATIC_DRAW);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="../../d8/d3d/class_render_object.html#a364403fc4940ea2137d0a1e4f6804271">indirectData</a>-&gt;<a class="code" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#a0a08e5e3a2ea1f8ba493747ab7537b77">elementCount</a> = vertexIndices.size();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../d6/dfb/class_render_object3_d.html#afa77311ec94079d3b0477fbcd4ba6dd1">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/dfb/class_render_object3_d.html#afa77311ec94079d3b0477fbcd4ba6dd1">RenderObject3D::render</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d8a/class_program.html">Program</a>* <span class="keyword">const</span> shaders, <span class="keyword">const</span> <a class="code" href="../../da/dbb/class_camera.html">Camera</a>* <span class="keyword">const</span> cam)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="../../d8/d3d/class_render_object.html#a912d50d2aa809fffa14d12aa36602164">RenderObject::render</a>(shaders, cam-&gt;<a class="code" href="../../da/dbb/class_camera.html#a9354e0c084511bc2ca5bd31cad2e32c5">view</a>, cam-&gt;<a class="code" href="../../da/dbb/class_camera.html#a423c862b7ec43cbac2a1ea9df870faa8">projection</a>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="ttc" id="class_render_object3_d_html_afa77311ec94079d3b0477fbcd4ba6dd1"><div class="ttname"><a href="../../d6/dfb/class_render_object3_d.html#afa77311ec94079d3b0477fbcd4ba6dd1">RenderObject3D::render</a></div><div class="ttdeci">virtual void render(const Program *const prg, const Camera *const cam) const </div><div class="ttdoc">Renders the 3D object. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/_render_object3_d_8cpp_source.html#l00083">RenderObject3D.cpp:83</a></div></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    glGenBuffers(1, &amp;<a class="code" href="../../d6/dfb/class_render_object3_d.html#a487a1649f8bf845bf5b98300fc003354">NBO</a>);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">const</span> GLfloat vertex_buffer_data[] = {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                -1.0f,-1.0f,-1.0f,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                -1.0f,-1.0f, 1.0f,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                -1.0f, 1.0f,-1.0f,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        -1.0f, 1.0f, 1.0f,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                 1.0f, 1.0f,-1.0f,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                 1.0f,-1.0f, 1.0f,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                 1.0f,-1.0f,-1.0f,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                 1.0f, 1.0f, 1.0f,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">const</span> GLuint element_buffer_data[] = {0,1,2,1,3,2,4,7,5,6,4,5,1,5,7,1,7,3,2,4,0,6,0,4,3,7,4,3,4,2,1,5,6,1,6,0};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        glBindBuffer(GL_ARRAY_BUFFER, <a class="code" href="../../d8/d3d/class_render_object.html#aff9e7da04cca0160ffde9a160b9f3cb3">VBO</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        glBufferData(GL_ARRAY_BUFFER, <span class="keyword">sizeof</span>(vertex_buffer_data), vertex_buffer_data, GL_STATIC_DRAW);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, <a class="code" href="../../d8/d3d/class_render_object.html#aa172793458c130dbde225a33b8ffb794">EBO</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        glBufferData(GL_ELEMENT_ARRAY_BUFFER, <span class="keyword">sizeof</span>(element_buffer_data), element_buffer_data, GL_STATIC_DRAW);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="../../d8/d3d/class_render_object.html#a364403fc4940ea2137d0a1e4f6804271">indirectData</a>-&gt;<a class="code" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#a0a08e5e3a2ea1f8ba493747ab7537b77">elementCount</a> = 36;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d6/dfb/class_render_object3_d.html#a0069faf99f9e94d5a2449cc2b9e046f3">   26</a></span>&#160;<a class="code" href="../../d6/dfb/class_render_object3_d.html#ad7171038923846ea65e10c6fe3fc9f32">RenderObject3D::RenderObject3D</a>(std::vector&lt;GLfloat&gt;* vertexData, std::vector&lt;GLuint&gt;* indexData) : <a class="code" href="../../d8/d3d/class_render_object.html">RenderObject</a>(vertexData, indexData), NBO(0), NBOsize(0)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    glGenBuffers(1, &amp;<a class="code" href="../../d6/dfb/class_render_object3_d.html#a487a1649f8bf845bf5b98300fc003354">NBO</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d6/dfb/class_render_object3_d.html#a80c2072736f4cc1b9671d006bab5fbfa">   31</a></span>&#160;<a class="code" href="../../d6/dfb/class_render_object3_d.html#ad7171038923846ea65e10c6fe3fc9f32">RenderObject3D::RenderObject3D</a>(std::string name) : <a class="code" href="../../d8/d3d/class_render_object.html">RenderObject</a>(), NBO(0), NBOsize(0)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    glGenBuffers(1, &amp;<a class="code" href="../../d6/dfb/class_render_object3_d.html#a487a1649f8bf845bf5b98300fc003354">NBO</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    name = <span class="stringliteral">&quot;models/&quot;</span> + name;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    vector&lt;GLuint&gt; vertexIndices, normalIndices;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    vector&lt;vec3&gt; rawVertices;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    vector&lt;vec3&gt; rawNormals;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    vector&lt;vec3&gt; vertices;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    vector&lt;vec3&gt; normals;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ifstream file(name);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">string</span> word;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    vec3 vertex;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    GLuint index;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span>(!file.is_open())</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="../../d4/d13/_main_8hpp.html#a8101ed0e9bd079849826e3f05914d436">ERROR</a> &lt;&lt; <span class="stringliteral">&quot;Failed to open file: &quot;</span> &lt;&lt; name &lt;&lt; endl;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">while</span>(!file.eof())</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        file &gt;&gt; word;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span>(word == <span class="stringliteral">&quot;vn&quot;</span>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            file &gt;&gt; vertex.x &gt;&gt; vertex.y &gt;&gt; vertex.z;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            rawNormals.push_back(vertex);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span>(word == <span class="stringliteral">&quot;v&quot;</span>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            file &gt;&gt; vertex.x &gt;&gt; vertex.y &gt;&gt; vertex.z;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            rawVertices.push_back(vertex);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span>(word == <span class="stringliteral">&quot;f&quot;</span>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 3; i++)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                file &gt;&gt; word;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                index = stoul(word.substr(0, word.find(<span class="stringliteral">&quot;//&quot;</span>)));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                vertexIndices.push_back(index);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                word.erase(0, word.find(<span class="stringliteral">&quot;//&quot;</span>) + 2);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                index = stoul(word);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                normalIndices.push_back(index);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        file.ignore(std::numeric_limits&lt;std::streamsize&gt;::max(), <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; vertexIndices.size(); i++)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        vertex = rawVertices[vertexIndices[i] - 1];</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        vertices.push_back(vertex);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        vertex = rawNormals[normalIndices[i] - 1];</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        normals.push_back(vertex);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        vertexIndices[i] = i;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, <a class="code" href="../../d8/d3d/class_render_object.html#aff9e7da04cca0160ffde9a160b9f3cb3">VBO</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    glBufferData(GL_ARRAY_BUFFER, vertices.size() * <span class="keyword">sizeof</span>(vec3), vertices.data(), GL_STATIC_DRAW);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, <a class="code" href="../../d8/d3d/class_render_object.html#aa172793458c130dbde225a33b8ffb794">EBO</a>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    glBufferData(GL_ELEMENT_ARRAY_BUFFER, vertexIndices.size() * <span class="keyword">sizeof</span>(GLuint), vertexIndices.data(), GL_STATIC_DRAW);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, <a class="code" href="../../d6/dfb/class_render_object3_d.html#a487a1649f8bf845bf5b98300fc003354">NBO</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    glBufferData(GL_ARRAY_BUFFER, normals.size() * <span class="keyword">sizeof</span>(vec3), normals.data(), GL_STATIC_DRAW);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../d8/d3d/class_render_object.html#a364403fc4940ea2137d0a1e4f6804271">indirectData</a>-&gt;<a class="code" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#a0a08e5e3a2ea1f8ba493747ab7537b77">elementCount</a> = vertexIndices.size();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d6/dfb/class_render_object3_d.html#afa77311ec94079d3b0477fbcd4ba6dd1">   98</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/dfb/class_render_object3_d.html#afa77311ec94079d3b0477fbcd4ba6dd1">RenderObject3D::render</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d8a/class_program.html">Program</a>* <span class="keyword">const</span> shaders, <span class="keyword">const</span> <a class="code" href="../../da/dbb/class_camera.html">Camera</a>* <span class="keyword">const</span> cam)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, <a class="code" href="../../d6/dfb/class_render_object3_d.html#a487a1649f8bf845bf5b98300fc003354">NBO</a>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    glEnableVertexAttribArray(1);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="../../d8/d3d/class_render_object.html#a912d50d2aa809fffa14d12aa36602164">RenderObject::render</a>(shaders, cam-&gt;<a class="code" href="../../da/dbb/class_camera.html#a9354e0c084511bc2ca5bd31cad2e32c5">view</a>, cam-&gt;<a class="code" href="../../da/dbb/class_camera.html#a423c862b7ec43cbac2a1ea9df870faa8">projection</a>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    glDisableVertexAttribArray(1);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="ttc" id="class_render_object3_d_html_afa77311ec94079d3b0477fbcd4ba6dd1"><div class="ttname"><a href="../../d6/dfb/class_render_object3_d.html#afa77311ec94079d3b0477fbcd4ba6dd1">RenderObject3D::render</a></div><div class="ttdeci">virtual void render(const Program *const prg, const Camera *const cam) const </div><div class="ttdoc">Renders the 3D object. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/_render_object3_d_8cpp_source.html#l00098">RenderObject3D.cpp:98</a></div></div>
 <div class="ttc" id="_main_8hpp_html"><div class="ttname"><a href="../../d4/d13/_main_8hpp.html">Main.hpp</a></div><div class="ttdoc">Main header file. </div></div>
-<div class="ttc" id="class_camera_html_a423c862b7ec43cbac2a1ea9df870faa8"><div class="ttname"><a href="../../da/dbb/class_camera.html#a423c862b7ec43cbac2a1ea9df870faa8">Camera::projection</a></div><div class="ttdeci">std::atomic&lt; glm::mat4 * &gt; projection</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d6a/_camera_8hpp_source.html#l00019">Camera.hpp:19</a></div></div>
+<div class="ttc" id="class_camera_html_a423c862b7ec43cbac2a1ea9df870faa8"><div class="ttname"><a href="../../da/dbb/class_camera.html#a423c862b7ec43cbac2a1ea9df870faa8">Camera::projection</a></div><div class="ttdeci">std::atomic&lt; glm::mat4 * &gt; projection</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d6a/_camera_8hpp_source.html#l00020">Camera.hpp:20</a></div></div>
 <div class="ttc" id="class_camera_html"><div class="ttname"><a href="../../da/dbb/class_camera.html">Camera</a></div><div class="ttdoc">Camera class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d6a/_camera_8hpp_source.html#l00015">Camera.hpp:15</a></div></div>
+<div class="ttc" id="class_render_object3_d_html_ad7171038923846ea65e10c6fe3fc9f32"><div class="ttname"><a href="../../d6/dfb/class_render_object3_d.html#ad7171038923846ea65e10c6fe3fc9f32">RenderObject3D::RenderObject3D</a></div><div class="ttdeci">RenderObject3D()</div><div class="ttdoc">RenderObject3D class default constructor. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df5/_render_object3_d_8cpp_source.html#l00005">RenderObject3D.cpp:5</a></div></div>
 <div class="ttc" id="class_render_object_html"><div class="ttname"><a href="../../d8/d3d/class_render_object.html">RenderObject</a></div><div class="ttdoc">RenderObject class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00015">RenderObject.hpp:15</a></div></div>
-<div class="ttc" id="class_camera_html_a9354e0c084511bc2ca5bd31cad2e32c5"><div class="ttname"><a href="../../da/dbb/class_camera.html#a9354e0c084511bc2ca5bd31cad2e32c5">Camera::view</a></div><div class="ttdeci">std::atomic&lt; glm::mat4 * &gt; view</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d6a/_camera_8hpp_source.html#l00018">Camera.hpp:18</a></div></div>
-<div class="ttc" id="struct_render_object_1_1_draw_elements_indirect_command__t_html_a0a08e5e3a2ea1f8ba493747ab7537b77"><div class="ttname"><a href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#a0a08e5e3a2ea1f8ba493747ab7537b77">RenderObject::DrawElementsIndirectCommand_t::elementCount</a></div><div class="ttdeci">GLuint elementCount</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00067">RenderObject.hpp:67</a></div></div>
+<div class="ttc" id="class_camera_html_a9354e0c084511bc2ca5bd31cad2e32c5"><div class="ttname"><a href="../../da/dbb/class_camera.html#a9354e0c084511bc2ca5bd31cad2e32c5">Camera::view</a></div><div class="ttdeci">std::atomic&lt; glm::mat4 * &gt; view</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d6a/_camera_8hpp_source.html#l00019">Camera.hpp:19</a></div></div>
+<div class="ttc" id="struct_render_object_1_1_draw_elements_indirect_command__t_html_a0a08e5e3a2ea1f8ba493747ab7537b77"><div class="ttname"><a href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#a0a08e5e3a2ea1f8ba493747ab7537b77">RenderObject::DrawElementsIndirectCommand_t::elementCount</a></div><div class="ttdeci">GLuint elementCount</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00074">RenderObject.hpp:74</a></div></div>
 <div class="ttc" id="_main_8hpp_html_a8101ed0e9bd079849826e3f05914d436"><div class="ttname"><a href="../../d4/d13/_main_8hpp.html#a8101ed0e9bd079849826e3f05914d436">ERROR</a></div><div class="ttdeci">std::ofstream ERROR</div></div>
-<div class="ttc" id="class_render_object_html_a364403fc4940ea2137d0a1e4f6804271"><div class="ttname"><a href="../../d8/d3d/class_render_object.html#a364403fc4940ea2137d0a1e4f6804271">RenderObject::indirectData</a></div><div class="ttdeci">DrawElementsIndirectCommand * indirectData</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00080">RenderObject.hpp:80</a></div></div>
+<div class="ttc" id="class_render_object_html_a364403fc4940ea2137d0a1e4f6804271"><div class="ttname"><a href="../../d8/d3d/class_render_object.html#a364403fc4940ea2137d0a1e4f6804271">RenderObject::indirectData</a></div><div class="ttdeci">DrawElementsIndirectCommand * indirectData</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00087">RenderObject.hpp:87</a></div></div>
 <div class="ttc" id="class_program_html"><div class="ttname"><a href="../../d3/d8a/class_program.html">Program</a></div><div class="ttdoc">Program class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd5/_program_8hpp_source.html#l00016">Program.hpp:16</a></div></div>
-<div class="ttc" id="class_render_object_html_aff9e7da04cca0160ffde9a160b9f3cb3"><div class="ttname"><a href="../../d8/d3d/class_render_object.html#aff9e7da04cca0160ffde9a160b9f3cb3">RenderObject::VBO</a></div><div class="ttdeci">GLuint VBO</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00074">RenderObject.hpp:74</a></div></div>
-<div class="ttc" id="class_render_object_html_aa172793458c130dbde225a33b8ffb794"><div class="ttname"><a href="../../d8/d3d/class_render_object.html#aa172793458c130dbde225a33b8ffb794">RenderObject::EBO</a></div><div class="ttdeci">GLuint EBO</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00076">RenderObject.hpp:76</a></div></div>
+<div class="ttc" id="class_render_object3_d_html_a487a1649f8bf845bf5b98300fc003354"><div class="ttname"><a href="../../d6/dfb/class_render_object3_d.html#a487a1649f8bf845bf5b98300fc003354">RenderObject3D::NBO</a></div><div class="ttdeci">GLuint NBO</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dc9/_render_object3_d_8hpp_source.html#l00044">RenderObject3D.hpp:44</a></div></div>
+<div class="ttc" id="class_render_object_html_aff9e7da04cca0160ffde9a160b9f3cb3"><div class="ttname"><a href="../../d8/d3d/class_render_object.html#aff9e7da04cca0160ffde9a160b9f3cb3">RenderObject::VBO</a></div><div class="ttdeci">GLuint VBO</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00081">RenderObject.hpp:81</a></div></div>
+<div class="ttc" id="class_render_object_html_aa172793458c130dbde225a33b8ffb794"><div class="ttname"><a href="../../d8/d3d/class_render_object.html#aa172793458c130dbde225a33b8ffb794">RenderObject::EBO</a></div><div class="ttdeci">GLuint EBO</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00083">RenderObject.hpp:83</a></div></div>
 <div class="ttc" id="class_render_object_html_a912d50d2aa809fffa14d12aa36602164"><div class="ttname"><a href="../../d8/d3d/class_render_object.html#a912d50d2aa809fffa14d12aa36602164">RenderObject::render</a></div><div class="ttdeci">virtual void render(const Program *const prg, const glm::mat4 *const viewMatrix, const glm::mat4 *const projectionMatrix) const </div><div class="ttdoc">Renders the object. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd4/_render_object_8cpp_source.html#l00085">RenderObject.cpp:85</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -210,7 +231,7 @@ $(document).ready(function(){initNavTree('dd/df5/_render_object3_d_8cpp_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>RenderObject3D.cpp</b></li>
-    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
+    <li class="footer">Generated on Tue Feb 18 2014 20:53:23 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

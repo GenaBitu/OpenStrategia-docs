@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['orientation',['orientation',['../da/dbb/class_camera.html#a25824338566a45f0ca1515ebb489c571',1,'Camera::orientation()'],['../d8/d3d/class_render_object.html#a88d2c19b55190f03b4dc1c45418edbb4',1,'RenderObject::orientation()']]]
+  ['nbo',['NBO',['../d6/dfb/class_render_object3_d.html#a487a1649f8bf845bf5b98300fc003354',1,'RenderObject3D']]],
+  ['nbosize',['NBOsize',['../d6/dfb/class_render_object3_d.html#ac6d0a176da7b9cd5e763d455ab7aea6f',1,'RenderObject3D']]]
 ];

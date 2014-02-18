@@ -1,13 +1,18 @@
 var files =
 [
+    [ "basic.fragment.glsl", "df/d98/basic_8fragment_8glsl_source.html", null ],
+    [ "basic.vertex.glsl", "d6/de1/basic_8vertex_8glsl_source.html", null ],
+    [ "blinn.fragment.glsl", "d4/da3/blinn_8fragment_8glsl_source.html", null ],
+    [ "blinn.vertex.glsl", "d2/d8e/blinn_8vertex_8glsl_source.html", null ],
     [ "Camera.cpp", "d1/d33/_camera_8cpp_source.html", null ],
     [ "Camera.hpp", "d4/d6a/_camera_8hpp.html", [
       [ "Camera", "da/dbb/class_camera.html", "da/dbb/class_camera" ]
     ] ],
-    [ "Fragment.glsl", "df/d66/_fragment_8glsl_source.html", null ],
     [ "Libs.hpp", "d3/dec/_libs_8hpp.html", null ],
     [ "Main.cpp", "d5/d12/_main_8cpp_source.html", null ],
     [ "Main.hpp", "d4/d13/_main_8hpp.html", "d4/d13/_main_8hpp" ],
+    [ "phong.fragment.glsl", "d4/de3/phong_8fragment_8glsl_source.html", null ],
+    [ "phong.vertex.glsl", "d7/d33/phong_8vertex_8glsl_source.html", null ],
     [ "Program.cpp", "df/db8/_program_8cpp_source.html", null ],
     [ "Program.hpp", "d9/dd5/_program_8hpp.html", [
       [ "Program", "d3/d8a/class_program.html", "d3/d8a/class_program" ]
@@ -28,6 +33,5 @@ var files =
     [ "Shader.cpp", "d5/d16/_shader_8cpp_source.html", null ],
     [ "Shader.hpp", "d2/d73/_shader_8hpp.html", [
       [ "Shader", "d1/d51/class_shader.html", "d1/d51/class_shader" ]
-    ] ],
-    [ "Vertex.glsl", "d7/df3/_vertex_8glsl_source.html", null ]
+    ] ]
 ];

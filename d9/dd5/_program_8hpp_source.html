@@ -116,15 +116,16 @@ $(document).ready(function(){initNavTree('d9/dd5/_program_8hpp_source.html','../
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d3/d8a/class_program.html#a93060f681a5ebb794b697dc372706f4e">   19</a></span>&#160;    <span class="keyword">const</span> GLuint <a class="code" href="../../d3/d8a/class_program.html#a93060f681a5ebb794b697dc372706f4e">programID</a>; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../d3/d8a/class_program.html">Program</a>();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d8a/class_program.html#aceb6b3995275213f709c10d941762806">AddShader</a>(<span class="keyword">const</span> std::string name, <span class="keyword">const</span> GLenum shaderType);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98">Link</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ~<a class="code" href="../../d3/d8a/class_program.html">Program</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d3/d8a/class_program.html#aef9f792a28379061751a1b9ff657c865">   31</a></span>&#160;    std::vector&lt;Shader*&gt; <a class="code" href="../../d3/d8a/class_program.html#aef9f792a28379061751a1b9ff657c865">shaders</a>; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"> #endif // PROGRAM_HPP</span></div>
-<div class="ttc" id="class_program_html_aef9f792a28379061751a1b9ff657c865"><div class="ttname"><a href="../../d3/d8a/class_program.html#aef9f792a28379061751a1b9ff657c865">Program::shaders</a></div><div class="ttdeci">std::vector&lt; Shader * &gt; shaders</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd5/_program_8hpp_source.html#l00031">Program.hpp:31</a></div></div>
-<div class="ttc" id="class_program_html_acbba030aed223ab4705d8386ffaabd98"><div class="ttname"><a href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98">Program::Link</a></div><div class="ttdeci">void Link() const </div><div class="ttdef"><b>Definition:</b> <a href="../../df/db8/_program_8cpp_source.html#l00013">Program.cpp:13</a></div></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98">Link</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="../../d3/d8a/class_program.html#a986aef1c50e1d338a3315a47ba6df549">~Program</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d3/d8a/class_program.html#aef9f792a28379061751a1b9ff657c865">   39</a></span>&#160;    std::vector&lt;Shader*&gt; <a class="code" href="../../d3/d8a/class_program.html#aef9f792a28379061751a1b9ff657c865">shaders</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"> #endif // PROGRAM_HPP</span></div>
+<div class="ttc" id="class_program_html_aef9f792a28379061751a1b9ff657c865"><div class="ttname"><a href="../../d3/d8a/class_program.html#aef9f792a28379061751a1b9ff657c865">Program::shaders</a></div><div class="ttdeci">std::vector&lt; Shader * &gt; shaders</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd5/_program_8hpp_source.html#l00039">Program.hpp:39</a></div></div>
+<div class="ttc" id="class_program_html_acbba030aed223ab4705d8386ffaabd98"><div class="ttname"><a href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98">Program::Link</a></div><div class="ttdeci">void Link() const </div><div class="ttdoc">Links shader program. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/db8/_program_8cpp_source.html#l00013">Program.cpp:13</a></div></div>
+<div class="ttc" id="class_program_html_a986aef1c50e1d338a3315a47ba6df549"><div class="ttname"><a href="../../d3/d8a/class_program.html#a986aef1c50e1d338a3315a47ba6df549">Program::~Program</a></div><div class="ttdeci">~Program()</div><div class="ttdoc">Program class destructor. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/db8/_program_8cpp_source.html#l00032">Program.cpp:32</a></div></div>
 <div class="ttc" id="class_program_html_a93060f681a5ebb794b697dc372706f4e"><div class="ttname"><a href="../../d3/d8a/class_program.html#a93060f681a5ebb794b697dc372706f4e">Program::programID</a></div><div class="ttdeci">const GLuint programID</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd5/_program_8hpp_source.html#l00019">Program.hpp:19</a></div></div>
 <div class="ttc" id="_libs_8hpp_html"><div class="ttname"><a href="../../d3/dec/_libs_8hpp.html">Libs.hpp</a></div><div class="ttdoc">File with libraries and dependencies. </div></div>
 <div class="ttc" id="class_program_html"><div class="ttname"><a href="../../d3/d8a/class_program.html">Program</a></div><div class="ttdoc">Program class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd5/_program_8hpp_source.html#l00016">Program.hpp:16</a></div></div>
@@ -135,7 +136,7 @@ $(document).ready(function(){initNavTree('d9/dd5/_program_8hpp_source.html','../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/dd5/_program_8hpp.html">Program.hpp</a></li>
-    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
+    <li class="footer">Generated on Tue Feb 18 2014 20:53:23 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

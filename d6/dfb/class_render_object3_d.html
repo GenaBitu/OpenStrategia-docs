@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('d6/dfb/class_render_object3_d.html','.
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d4/d66/class_render_object3_d-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RenderObject3D Class Reference</div>  </div>
@@ -132,6 +133,9 @@ Collaboration diagram for RenderObject3D:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad7171038923846ea65e10c6fe3fc9f32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dfb/class_render_object3_d.html#ad7171038923846ea65e10c6fe3fc9f32">RenderObject3D</a> ()</td></tr>
+<tr class="memdesc:ad7171038923846ea65e10c6fe3fc9f32"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d6/dfb/class_render_object3_d.html" title="RenderObject3D class. ">RenderObject3D</a> class default constructor.  <a href="#ad7171038923846ea65e10c6fe3fc9f32">More...</a><br/></td></tr>
+<tr class="separator:ad7171038923846ea65e10c6fe3fc9f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0069faf99f9e94d5a2449cc2b9e046f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dfb/class_render_object3_d.html#a0069faf99f9e94d5a2449cc2b9e046f3">RenderObject3D</a> (std::vector&lt; GLfloat &gt; *vertexData, std::vector&lt; GLuint &gt; *indexData)</td></tr>
 <tr class="memdesc:a0069faf99f9e94d5a2449cc2b9e046f3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d6/dfb/class_render_object3_d.html" title="RenderObject3D class. ">RenderObject3D</a> constructor.  <a href="#a0069faf99f9e94d5a2449cc2b9e046f3">More...</a><br/></td></tr>
 <tr class="separator:a0069faf99f9e94d5a2449cc2b9e046f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afa77311ec94079d3b0477fbcd4ba6dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the 3D object.  <a href="#afa77311ec94079d3b0477fbcd4ba6dd1">More...</a><br/></td></tr>
 <tr class="separator:afa77311ec94079d3b0477fbcd4ba6dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_render_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_render_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a></td></tr>
+<tr class="memitem:a1ece4fac7f6c74af1aed30ba2d994c75 inherit pub_methods_class_render_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a1ece4fac7f6c74af1aed30ba2d994c75">RenderObject</a> ()</td></tr>
+<tr class="memdesc:a1ece4fac7f6c74af1aed30ba2d994c75 inherit pub_methods_class_render_object"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> class default constructor.  <a href="#a1ece4fac7f6c74af1aed30ba2d994c75">More...</a><br/></td></tr>
+<tr class="separator:a1ece4fac7f6c74af1aed30ba2d994c75 inherit pub_methods_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a947736621128d42275d421f263dcd6de inherit pub_methods_class_render_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a947736621128d42275d421f263dcd6de">RenderObject</a> (const <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a> &amp;other)</td></tr>
 <tr class="memdesc:a947736621128d42275d421f263dcd6de inherit pub_methods_class_render_object"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> class copy constructor.  <a href="#a947736621128d42275d421f263dcd6de">More...</a><br/></td></tr>
 <tr class="separator:a947736621128d42275d421f263dcd6de inherit pub_methods_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,20 +167,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a912d50d2aa809fffa14d12aa36602164 inherit pub_methods_class_render_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a912d50d2aa809fffa14d12aa36602164">render</a> (const <a class="el" href="../../d3/d8a/class_program.html">Program</a> *const prg, const glm::mat4 *const viewMatrix, const glm::mat4 *const projectionMatrix) const </td></tr>
 <tr class="memdesc:a912d50d2aa809fffa14d12aa36602164 inherit pub_methods_class_render_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the object.  <a href="#a912d50d2aa809fffa14d12aa36602164">More...</a><br/></td></tr>
 <tr class="separator:a912d50d2aa809fffa14d12aa36602164 inherit pub_methods_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7c52e3e892530e0ca7165a2aab3a00 inherit pub_methods_class_render_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#aac7c52e3e892530e0ca7165a2aab3a00">~RenderObject</a> ()</td></tr>
+<tr class="memdesc:aac7c52e3e892530e0ca7165a2aab3a00 inherit pub_methods_class_render_object"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> class destructor.  <a href="#aac7c52e3e892530e0ca7165a2aab3a00">More...</a><br/></td></tr>
+<tr class="separator:aac7c52e3e892530e0ca7165a2aab3a00 inherit pub_methods_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_class_render_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_render_object')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a></td></tr>
-<tr class="memitem:af5bdae8aa0b40da72f159dab1f85b0c9 inherit pub_attribs_class_render_object"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#af5bdae8aa0b40da72f159dab1f85b0c9">position</a></td></tr>
-<tr class="separator:af5bdae8aa0b40da72f159dab1f85b0c9 inherit pub_attribs_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d2c19b55190f03b4dc1c45418edbb4 inherit pub_attribs_class_render_object"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a88d2c19b55190f03b4dc1c45418edbb4">orientation</a></td></tr>
-<tr class="separator:a88d2c19b55190f03b4dc1c45418edbb4 inherit pub_attribs_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_types_class_render_object"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_render_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a></td></tr>
-<tr class="memitem:a8b0c9652779e08991bec589380d32317 inherit pro_types_class_render_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b0c9652779e08991bec589380d32317"></a>
-typedef struct <br class="typebreak"/>
-<a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html">RenderObject::DrawElementsIndirectCommand_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a8b0c9652779e08991bec589380d32317">DrawElementsIndirectCommand</a></td></tr>
-<tr class="memdesc:a8b0c9652779e08991bec589380d32317 inherit pro_types_class_render_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure used to draw the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> indirectly. <br/></td></tr>
-<tr class="separator:a8b0c9652779e08991bec589380d32317 inherit pro_types_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a487a1649f8bf845bf5b98300fc003354"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dfb/class_render_object3_d.html#a487a1649f8bf845bf5b98300fc003354">NBO</a></td></tr>
+<tr class="separator:a487a1649f8bf845bf5b98300fc003354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d0a176da7b9cd5e763d455ab7aea6f"><td class="memItemLeft" align="right" valign="top">GLsizei&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dfb/class_render_object3_d.html#ac6d0a176da7b9cd5e763d455ab7aea6f">NBOsize</a></td></tr>
+<tr class="separator:ac6d0a176da7b9cd5e763d455ab7aea6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_render_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_render_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a></td></tr>
 <tr class="memitem:aff9e7da04cca0160ffde9a160b9f3cb3 inherit pro_attribs_class_render_object"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#aff9e7da04cca0160ffde9a160b9f3cb3">VBO</a></td></tr>
 <tr class="separator:aff9e7da04cca0160ffde9a160b9f3cb3 inherit pro_attribs_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +192,20 @@ typedef struct <br class="typebreak"/>
 <tr class="separator:a9a067fc323ece09a8711e8651bc63e25 inherit pro_attribs_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364403fc4940ea2137d0a1e4f6804271 inherit pro_attribs_class_render_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d3d/class_render_object.html#a8b0c9652779e08991bec589380d32317">DrawElementsIndirectCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a364403fc4940ea2137d0a1e4f6804271">indirectData</a></td></tr>
 <tr class="separator:a364403fc4940ea2137d0a1e4f6804271 inherit pro_attribs_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_render_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_render_object')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a></td></tr>
+<tr class="memitem:af66bafea27af1e4466452adacc59f6ae inherit pub_attribs_class_render_object"><td class="memItemLeft" align="right" valign="top">glm::mat4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#af66bafea27af1e4466452adacc59f6ae">position</a></td></tr>
+<tr class="separator:af66bafea27af1e4466452adacc59f6ae inherit pub_attribs_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21773d153277545395cdd9081c281cc inherit pub_attribs_class_render_object"><td class="memItemLeft" align="right" valign="top">glm::mat4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#ad21773d153277545395cdd9081c281cc">orientation</a></td></tr>
+<tr class="separator:ad21773d153277545395cdd9081c281cc inherit pub_attribs_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_render_object"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_render_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d8/d3d/class_render_object.html">RenderObject</a></td></tr>
+<tr class="memitem:a8b0c9652779e08991bec589380d32317 inherit pro_types_class_render_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b0c9652779e08991bec589380d32317"></a>
+typedef struct <br class="typebreak"/>
+<a class="el" href="../../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html">RenderObject::DrawElementsIndirectCommand_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3d/class_render_object.html#a8b0c9652779e08991bec589380d32317">DrawElementsIndirectCommand</a></td></tr>
+<tr class="memdesc:a8b0c9652779e08991bec589380d32317 inherit pro_types_class_render_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure used to draw the <a class="el" href="../../d8/d3d/class_render_object.html" title="RenderObject class. ">RenderObject</a> indirectly. <br/></td></tr>
+<tr class="separator:a8b0c9652779e08991bec589380d32317 inherit pro_types_class_render_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d6/dfb/class_render_object3_d.html" title="RenderObject3D class. ">RenderObject3D</a> class. </p>
@@ -196,6 +213,26 @@ typedef struct <br class="typebreak"/>
 
 <p>Definition at line <a class="el" href="../../de/dc9/_render_object3_d_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../de/dc9/_render_object3_d_8hpp_source.html">RenderObject3D.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad7171038923846ea65e10c6fe3fc9f32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RenderObject3D::RenderObject3D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d6/dfb/class_render_object3_d.html" title="RenderObject3D class. ">RenderObject3D</a> class default constructor. </p>
+<p>Initializes all buffers and dynamic variables, draws a funky cube. </p>
+
+<p>Definition at line <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html#l00005">5</a> of file <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html">RenderObject3D.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0069faf99f9e94d5a2449cc2b9e046f3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +267,7 @@ typedef struct <br class="typebreak"/>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html">RenderObject3D.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html">RenderObject3D.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +294,7 @@ typedef struct <br class="typebreak"/>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html">RenderObject3D.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html">RenderObject3D.cpp</a>.</p>
 
 </div>
 </div>
@@ -304,7 +341,7 @@ typedef struct <br class="typebreak"/>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html">RenderObject3D.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../dd/df5/_render_object3_d_8cpp_source.html">RenderObject3D.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -314,6 +351,53 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="../../d8/d3d/class_render_object.html#a912d50d2aa809fffa14d12aa36602164" title="Renders the object. " alt="" coords="217,5,362,32"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a487a1649f8bf845bf5b98300fc003354"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint RenderObject3D::NBO</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index of the GL_ARRAY_BUFFER containing normals. </p>
+
+<p>Definition at line <a class="el" href="../../de/dc9/_render_object3_d_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../de/dc9/_render_object3_d_8hpp_source.html">RenderObject3D.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6d0a176da7b9cd5e763d455ab7aea6f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLsizei RenderObject3D::NBOsize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Size of the GL_ARRAY_BUFFER containing normals. </p>
+
+<p>Definition at line <a class="el" href="../../de/dc9/_render_object3_d_8hpp_source.html#l00045">45</a> of file <a class="el" href="../../de/dc9/_render_object3_d_8hpp_source.html">RenderObject3D.hpp</a>.</p>
 
 </div>
 </div>
@@ -327,7 +411,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dfb/class_render_object3_d.html">RenderObject3D</a></li>
-    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
+    <li class="footer">Generated on Tue Feb 18 2014 20:53:23 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

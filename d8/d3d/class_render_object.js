@@ -15,8 +15,8 @@ var class_render_object =
     [ "IBO", "d8/d3d/class_render_object.html#a4eda4dc3d3d5dbd5d27a2e2e12e109d4", null ],
     [ "IBOsize", "d8/d3d/class_render_object.html#a9a067fc323ece09a8711e8651bc63e25", null ],
     [ "indirectData", "d8/d3d/class_render_object.html#a364403fc4940ea2137d0a1e4f6804271", null ],
-    [ "orientation", "d8/d3d/class_render_object.html#a88d2c19b55190f03b4dc1c45418edbb4", null ],
-    [ "position", "d8/d3d/class_render_object.html#af5bdae8aa0b40da72f159dab1f85b0c9", null ],
+    [ "orientation", "d8/d3d/class_render_object.html#ad21773d153277545395cdd9081c281cc", null ],
+    [ "position", "d8/d3d/class_render_object.html#af66bafea27af1e4466452adacc59f6ae", null ],
     [ "VBO", "d8/d3d/class_render_object.html#aff9e7da04cca0160ffde9a160b9f3cb3", null ],
     [ "VBOsize", "d8/d3d/class_render_object.html#a02e939a3b82e4888102ea6c35fb94e09", null ]
 ];

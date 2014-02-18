@@ -132,6 +132,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a13b7748a41b744307fc056dcd00b69b2"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; glm::vec3 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a13b7748a41b744307fc056dcd00b69b2">position</a></td></tr>
+<tr class="separator:a13b7748a41b744307fc056dcd00b69b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9354e0c084511bc2ca5bd31cad2e32c5"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; glm::mat4 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a9354e0c084511bc2ca5bd31cad2e32c5">view</a></td></tr>
 <tr class="separator:a9354e0c084511bc2ca5bd31cad2e32c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a423c862b7ec43cbac2a1ea9df870faa8"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; glm::mat4 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a423c862b7ec43cbac2a1ea9df870faa8">projection</a></td></tr>
@@ -139,8 +141,6 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a13b7748a41b744307fc056dcd00b69b2"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; glm::vec3 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a13b7748a41b744307fc056dcd00b69b2">position</a></td></tr>
-<tr class="separator:a13b7748a41b744307fc056dcd00b69b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25824338566a45f0ca1515ebb489c571"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; glm::quat * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a25824338566a45f0ca1515ebb489c571">orientation</a></td></tr>
 <tr class="separator:a25824338566a45f0ca1515ebb489c571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2960f533df18fe6d7d574c316c6d217a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbb/class_camera.html#a2960f533df18fe6d7d574c316c6d217a">speed</a></td></tr>
@@ -272,30 +272,22 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Orientation of the camera represented by a quaternion </p>
 
-<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a13b7748a41b744307fc056dcd00b69b2"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::atomic&lt;glm::vec3*&gt; Camera::position</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Position of the camera represented by a matrix. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -310,7 +302,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Projection matrix </p>
 
-<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +325,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Movement speed. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -348,7 +340,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>View matrix </p>
 
-<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d6a/_camera_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../d4/d6a/_camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -362,7 +354,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/dbb/class_camera.html">Camera</a></li>
-    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
+    <li class="footer">Generated on Tue Feb 18 2014 20:53:23 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

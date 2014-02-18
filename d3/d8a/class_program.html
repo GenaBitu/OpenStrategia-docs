@@ -124,7 +124,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aceb6b3995275213f709c10d941762806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a shader to the program.  <a href="#aceb6b3995275213f709c10d941762806">More...</a><br/></td></tr>
 <tr class="separator:aceb6b3995275213f709c10d941762806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbba030aed223ab4705d8386ffaabd98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98">Link</a> () const </td></tr>
+<tr class="memdesc:acbba030aed223ab4705d8386ffaabd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links shader program.  <a href="#acbba030aed223ab4705d8386ffaabd98">More...</a><br/></td></tr>
 <tr class="separator:acbba030aed223ab4705d8386ffaabd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986aef1c50e1d338a3315a47ba6df549"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8a/class_program.html#a986aef1c50e1d338a3315a47ba6df549">~Program</a> ()</td></tr>
+<tr class="memdesc:a986aef1c50e1d338a3315a47ba6df549"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d3/d8a/class_program.html" title="Program class. ">Program</a> class destructor.  <a href="#a986aef1c50e1d338a3315a47ba6df549">More...</a><br/></td></tr>
+<tr class="separator:a986aef1c50e1d338a3315a47ba6df549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -141,7 +145,28 @@ Private Attributes</h2></td></tr>
 <p>This class creates a shader program, Adds individual shaders, links the whole program and spits back programID to be passed to glUseProgram(). </p>
 
 <p>Definition at line <a class="el" href="../../d9/dd5/_program_8hpp_source.html#l00016">16</a> of file <a class="el" href="../../d9/dd5/_program_8hpp_source.html">Program.hpp</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a986aef1c50e1d338a3315a47ba6df549"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Program::~Program </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d3/d8a/class_program.html" title="Program class. ">Program</a> class destructor. </p>
+<p>Deletes all dynamically allocated variables. </p>
+
+<p>Definition at line <a class="el" href="../../df/db8/_program_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../df/db8/_program_8cpp_source.html">Program.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aceb6b3995275213f709c10d941762806"></a>
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +192,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds a shader to the program. </p>
-<p>Has no effect unless <a class="el" href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98">Link()</a> was called afterwards. </p>
+<p>Has no effect unless <a class="el" href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98" title="Links shader program. ">Link()</a> was called afterwards. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Filename with extension, relative to the shaders subdir. </td></tr>
@@ -192,6 +217,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Links shader program. </p>
+<p>After changing anything to the shader program, <a class="el" href="../../d3/d8a/class_program.html#acbba030aed223ab4705d8386ffaabd98" title="Links shader program. ">Link()</a> must be called again. </p>
 <p>&lt; Verify the result</p>
 <p>&lt; Error </p>
 
@@ -234,7 +262,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Vector with pointers to all shaders in the shader program. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dd5/_program_8hpp_source.html#l00031">31</a> of file <a class="el" href="../../d9/dd5/_program_8hpp_source.html">Program.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dd5/_program_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../d9/dd5/_program_8hpp_source.html">Program.hpp</a>.</p>
 
 </div>
 </div>
@@ -248,7 +276,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d8a/class_program.html">Program</a></li>
-    <li class="footer">Generated on Mon Jan 6 2014 18:00:12 for OpenStrategia by
+    <li class="footer">Generated on Tue Feb 18 2014 20:53:23 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
