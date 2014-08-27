@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['pause',['PAUSE',['../d4/d13/_main_8hpp.html#ac8f3810dbdc4637d4b55e1cf2b28a56a',1,'Main.cpp']]],
-  ['position',['position',['../da/dbb/class_camera.html#a13b7748a41b744307fc056dcd00b69b2',1,'Camera::position()'],['../d8/d3d/class_render_object.html#af66bafea27af1e4466452adacc59f6ae',1,'RenderObject::position()']]],
-  ['primcount',['primCount',['../d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html#aa2c528b777525a7d19f5eb858d2d3aab',1,'RenderObject::DrawElementsIndirectCommand_t']]],
-  ['program',['Program',['../d3/d8a/class_program.html',1,'']]],
-  ['program_2ehpp',['Program.hpp',['../d9/dd5/_program_8hpp.html',1,'']]],
-  ['programid',['programID',['../d3/d8a/class_program.html#a93060f681a5ebb794b697dc372706f4e',1,'Program']]],
-  ['projection',['projection',['../da/dbb/class_camera.html#a423c862b7ec43cbac2a1ea9df870faa8',1,'Camera']]]
+  ['texture',['Texture',['../d2/d7f/class_texture.html',1,'Texture'],['../d2/d7f/class_texture.html#a657517c71c4ca57cf8fdc992247a575c',1,'Texture::Texture(std::string name)'],['../d2/d7f/class_texture.html#aea6e2585385d350d16497e27da372f3a',1,'Texture::Texture(const Texture &amp;other)'],['../d8/d3d/class_render_object.html#a809df25fc1fdbe9bac335ba40bfac25a',1,'RenderObject::texture()']]],
+  ['texture_2ehpp',['Texture.hpp',['../d2/d4b/_texture_8hpp.html',1,'']]],
+  ['textureid',['textureID',['../d2/d7f/class_texture.html#ab61a414e1ed356a30c48952d65227691',1,'Texture']]]
 ];

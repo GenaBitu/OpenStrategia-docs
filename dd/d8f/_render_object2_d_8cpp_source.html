@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('dd/d8f/_render_object2_d_8cpp_source.h
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,17 +111,17 @@ $(document).ready(function(){initNavTree('dd/d8f/_render_object2_d_8cpp_source.h
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d4/dfb/class_render_object2_d.html#a7b730149b37de013fd730bf034abf4ff">    5</a></span>&#160;<a class="code" href="../../d4/dfb/class_render_object2_d.html#a7b730149b37de013fd730bf034abf4ff">RenderObject2D::RenderObject2D</a>()        <span class="comment">//DEBUG ONLY</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;     <span class="keyword">const</span> GLfloat vertex_buffer_data[] = {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;     <span class="keyword">const</span> GLfloat vertex_buffer_data[]{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                -0.5f,-1.0f, 0.0f,</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                 1.0f,-1.0f, 0.0f,</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                 1.0f, 1.0f, 0.0f,</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        };</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">const</span> GLuint element_buffer_data[] = {0,1,2};</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">const</span> GLuint element_buffer_data[]{0,1,2};</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        glBindBuffer(GL_ARRAY_BUFFER, VBO);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        glBufferData(GL_ARRAY_BUFFER, <span class="keyword">sizeof</span>(vertex_buffer_data), vertex_buffer_data, GL_STATIC_DRAW);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        glBufferData(GL_ELEMENT_ARRAY_BUFFER, <span class="keyword">sizeof</span>(element_buffer_data), element_buffer_data, GL_STATIC_DRAW);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        indirectData-&gt;elementCount = 3;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        elementCount = 3;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d4/dfb/class_render_object2_d.html#a91eb36a21c8fa598c2b858387fe1b708">   20</a></span>&#160;<a class="code" href="../../d4/dfb/class_render_object2_d.html#a7b730149b37de013fd730bf034abf4ff">RenderObject2D::RenderObject2D</a>(std::vector&lt;GLfloat&gt;* vertexData, std::vector&lt;GLuint&gt;* indexData) : <a class="code" href="../../d8/d3d/class_render_object.html">RenderObject</a>(vertexData, indexData) {}</div>
@@ -129,23 +129,24 @@ $(document).ready(function(){initNavTree('dd/d8f/_render_object2_d_8cpp_source.h
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d4/dfb/class_render_object2_d.html#ab2a42f792f245ef0d92aa74090a6fdcd">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d4/dfb/class_render_object2_d.html#ab2a42f792f245ef0d92aa74090a6fdcd">RenderObject2D::render</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d8a/class_program.html">Program</a>* <span class="keyword">const</span> prg)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    glDisable(GL_DEPTH_TEST);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    mat4 identity = mat4(1.0f);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d8/d3d/class_render_object.html#a912d50d2aa809fffa14d12aa36602164">RenderObject::render</a>(prg, &amp;identity, &amp;identity);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    glEnable(GL_DEPTH_TEST);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    shared_ptr&lt;mat4&gt; identity{<span class="keyword">new</span> mat4{}};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d8/d3d/class_render_object.html#a5e5785ba38feb15266142e7aa869d012">RenderObject::render</a>(prg, identity, identity);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    identity.reset();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    glEnable(GL_DEPTH_TEST);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 <div class="ttc" id="_main_8hpp_html"><div class="ttname"><a href="../../d4/d13/_main_8hpp.html">Main.hpp</a></div><div class="ttdoc">Main header file. </div></div>
 <div class="ttc" id="class_render_object2_d_html_a7b730149b37de013fd730bf034abf4ff"><div class="ttname"><a href="../../d4/dfb/class_render_object2_d.html#a7b730149b37de013fd730bf034abf4ff">RenderObject2D::RenderObject2D</a></div><div class="ttdeci">RenderObject2D()</div><div class="ttdoc">RenderObject2D class default constructor. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8f/_render_object2_d_8cpp_source.html#l00005">RenderObject2D.cpp:5</a></div></div>
-<div class="ttc" id="class_render_object_html"><div class="ttname"><a href="../../d8/d3d/class_render_object.html">RenderObject</a></div><div class="ttdoc">RenderObject class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00015">RenderObject.hpp:15</a></div></div>
+<div class="ttc" id="class_render_object_html"><div class="ttname"><a href="../../d8/d3d/class_render_object.html">RenderObject</a></div><div class="ttdoc">RenderObject class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/_render_object_8hpp_source.html#l00016">RenderObject.hpp:16</a></div></div>
+<div class="ttc" id="class_render_object_html_a5e5785ba38feb15266142e7aa869d012"><div class="ttname"><a href="../../d8/d3d/class_render_object.html#a5e5785ba38feb15266142e7aa869d012">RenderObject::render</a></div><div class="ttdeci">virtual void render(const Program *const prg, const std::shared_ptr&lt; const glm::mat4 &gt; viewMatrix, const std::shared_ptr&lt; const glm::mat4 &gt; projectionMatrix) const </div><div class="ttdoc">Renders the object. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd4/_render_object_8cpp_source.html#l00099">RenderObject.cpp:99</a></div></div>
 <div class="ttc" id="class_program_html"><div class="ttname"><a href="../../d3/d8a/class_program.html">Program</a></div><div class="ttdoc">Program class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd5/_program_8hpp_source.html#l00016">Program.hpp:16</a></div></div>
 <div class="ttc" id="class_render_object2_d_html_ab2a42f792f245ef0d92aa74090a6fdcd"><div class="ttname"><a href="../../d4/dfb/class_render_object2_d.html#ab2a42f792f245ef0d92aa74090a6fdcd">RenderObject2D::render</a></div><div class="ttdeci">virtual void render(const Program *const prg) const </div><div class="ttdoc">Renders the 2D object. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d8f/_render_object2_d_8cpp_source.html#l00022">RenderObject2D.cpp:22</a></div></div>
-<div class="ttc" id="class_render_object_html_a912d50d2aa809fffa14d12aa36602164"><div class="ttname"><a href="../../d8/d3d/class_render_object.html#a912d50d2aa809fffa14d12aa36602164">RenderObject::render</a></div><div class="ttdeci">virtual void render(const Program *const prg, const glm::mat4 *const viewMatrix, const glm::mat4 *const projectionMatrix) const </div><div class="ttdoc">Renders the object. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd4/_render_object_8cpp_source.html#l00085">RenderObject.cpp:85</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>RenderObject2D.cpp</b></li>
-    <li class="footer">Generated on Tue Feb 18 2014 20:53:23 for OpenStrategia by
+    <li class="footer">Generated on Wed Aug 27 2014 19:28:14 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

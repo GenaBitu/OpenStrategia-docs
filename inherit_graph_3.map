@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d4/d10/struct_render_object_1_1_draw_elements_indirect_command__t.html" title="Structure used to draw the RenderObject indirectly. " alt="" coords="6,5,199,46"/>
+<area shape="rect" id="node1" href="$d8/d3d/class_render_object.html" title="RenderObject class. " alt="" coords="5,31,107,57"/>
+<area shape="rect" id="node2" href="$d4/dfb/class_render_object2_d.html" title="RenderObject2D class. " alt="" coords="155,5,272,32"/>
+<area shape="rect" id="node3" href="$d6/dfb/class_render_object3_d.html" title="RenderObject3D class. " alt="" coords="155,56,272,83"/>
 </map>

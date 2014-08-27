@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['update',['update',['../d8/d3d/class_render_object.html#a8f86d708d099fbca27c008133600c17a',1,'RenderObject']]]
+  ['width',['WIDTH',['../d4/d13/_main_8hpp.html#a59c3bba4b17cd5e19f149ea175fa6989',1,'Main.cpp']]],
+  ['window',['WINDOW',['../d4/d13/_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c',1,'Main.cpp']]]
 ];

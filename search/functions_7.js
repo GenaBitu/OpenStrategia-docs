@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update',['update',['../d8/d3d/class_render_object.html#a8f86d708d099fbca27c008133600c17a',1,'RenderObject']]]
+  ['texture',['Texture',['../d2/d7f/class_texture.html#a657517c71c4ca57cf8fdc992247a575c',1,'Texture::Texture(std::string name)'],['../d2/d7f/class_texture.html#aea6e2585385d350d16497e27da372f3a',1,'Texture::Texture(const Texture &amp;other)']]]
 ];

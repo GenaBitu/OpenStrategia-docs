@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('d3/d8a/class_program.html','../../');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('d3/d8a/class_program.html','../../');}
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -118,6 +119,12 @@ $(document).ready(function(){initNavTree('d3/d8a/class_program.html','../../');}
 
 <p><code>#include &lt;<a class="el" href="../../d9/dd5/_program_8hpp_source.html">Program.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dee/class_program_1_1_shader.html">Shader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/dee/class_program_1_1_shader.html" title="Shader class. ">Shader</a> class.  <a href="../../d4/dee/class_program_1_1_shader.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aceb6b3995275213f709c10d941762806"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8a/class_program.html#aceb6b3995275213f709c10d941762806">AddShader</a> (const std::string name, const GLenum shaderType)</td></tr>
@@ -137,8 +144,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aef9f792a28379061751a1b9ff657c865"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d1/d51/class_shader.html">Shader</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8a/class_program.html#aef9f792a28379061751a1b9ff657c865">shaders</a></td></tr>
-<tr class="separator:aef9f792a28379061751a1b9ff657c865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5e2b4fef22e63381138912ce8e7ee6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="../../d4/dee/class_program_1_1_shader.html">Shader</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8a/class_program.html#a6d5e2b4fef22e63381138912ce8e7ee6">shaders</a></td></tr>
+<tr class="separator:a6d5e2b4fef22e63381138912ce8e7ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d3/d8a/class_program.html" title="Program class. ">Program</a> class. </p>
@@ -239,11 +247,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>ID of the shader program. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dd5/_program_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../d9/dd5/_program_8hpp_source.html">Program.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dd5/_program_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../d9/dd5/_program_8hpp_source.html">Program.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aef9f792a28379061751a1b9ff657c865"></a>
+<a class="anchor" id="a6d5e2b4fef22e63381138912ce8e7ee6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -251,7 +259,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="../../d1/d51/class_shader.html">Shader</a>*&gt; Program::shaders</td>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="../../d4/dee/class_program_1_1_shader.html">Shader</a>&gt; &gt; Program::shaders</td>
         </tr>
       </table>
   </td>
@@ -262,7 +270,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Vector with pointers to all shaders in the shader program. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dd5/_program_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../d9/dd5/_program_8hpp_source.html">Program.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dd5/_program_8hpp_source.html#l00040">40</a> of file <a class="el" href="../../d9/dd5/_program_8hpp_source.html">Program.hpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +284,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d8a/class_program.html">Program</a></li>
-    <li class="footer">Generated on Tue Feb 18 2014 20:53:23 for OpenStrategia by
+    <li class="footer">Generated on Wed Aug 27 2014 19:28:15 for OpenStrategia by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

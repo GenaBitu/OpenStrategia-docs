@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['camera',['Camera',['../da/dbb/class_camera.html',1,'Camera'],['../da/dbb/class_camera.html#a1e39d35127e2fcbef7156967aa466328',1,'Camera::Camera()']]],
-  ['camera_2ehpp',['Camera.hpp',['../d4/d6a/_camera_8hpp.html',1,'']]]
+  ['delta',['DELTA',['../d4/d13/_main_8hpp.html#a11ad41d723292a6437dbcefe8aaba53f',1,'Main.cpp']]]
 ];
