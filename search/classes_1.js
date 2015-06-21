@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['program',['Program',['../d3/d8a/class_program.html',1,'']]]
+  ['camera',['Camera',['../class_camera.html',1,'']]],
+  ['checkbox',['Checkbox',['../class_checkbox.html',1,'']]]
 ];

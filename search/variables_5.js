@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['orientation',['orientation',['../da/dbb/class_camera.html#ae936e170b9bb26cd3e88f56b8c7e0014',1,'Camera::orientation()'],['../d8/d3d/class_render_object.html#a1a365995179e5ea7e6598283d111400f',1,'RenderObject::orientation()']]]
+  ['maincam',['MAINCAM',['../_main_8hpp.html#a9507b089b475408f8027a8756228bc80',1,'Main.cpp']]],
+  ['maxstate',['maxState',['../class_slider.html#a04c8542ab8036ac7f9358ff5fc3ea23e',1,'Slider']]]
 ];

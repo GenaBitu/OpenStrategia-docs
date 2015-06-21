@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ycursor',['YCURSOR',['../d4/d13/_main_8hpp.html#a9b3dc580b7ef869a0b3797610f704f52',1,'Main.cpp']]]
+  ['window',['WINDOW',['../_main_8hpp.html#a91f15513fc889e968009cc55ffa31c5c',1,'Main.cpp']]]
 ];

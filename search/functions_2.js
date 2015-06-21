@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['handle',['handle',['../da/dbb/class_camera.html#ad9d830daaca9bff03bea3edda4abb482',1,'Camera::handle()'],['../d8/d3d/class_render_object.html#a357c1b160d8154ea8d99d93e3b553bef',1,'RenderObject::handle()']]]
+  ['camera',['Camera',['../class_camera.html#ad491e80e8096db31be3d6095475ff3f3',1,'Camera::Camera(const Camera &amp;other)'],['../class_camera.html#a1e39d35127e2fcbef7156967aa466328',1,'Camera::Camera(float FOV, float aspect, float speed, glm::vec3 position, glm::quat orientation)']]],
+  ['checkbox',['Checkbox',['../class_checkbox.html#aab36f4685410696eda83ad2104e191a2',1,'Checkbox']]],
+  ['click',['click',['../class_image.html#ae973ea35a472401bcbe526c3daa7a7e7',1,'Image']]]
 ];

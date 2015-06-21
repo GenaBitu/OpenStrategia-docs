@@ -1,10 +1,17 @@
 var annotated =
 [
-    [ "Camera", "da/dbb/class_camera.html", "da/dbb/class_camera" ],
-    [ "Program", "d3/d8a/class_program.html", "d3/d8a/class_program" ],
-    [ "RenderObject", "d8/d3d/class_render_object.html", "d8/d3d/class_render_object" ],
-    [ "RenderObject2D", "d4/dfb/class_render_object2_d.html", "d4/dfb/class_render_object2_d" ],
-    [ "RenderObject3D", "d6/dfb/class_render_object3_d.html", "d6/dfb/class_render_object3_d" ],
-    [ "Shader", "d1/d51/class_shader.html", "d1/d51/class_shader" ],
-    [ "Texture", "d2/d7f/class_texture.html", "d2/d7f/class_texture" ]
+    [ "Button", "class_button.html", "class_button" ],
+    [ "Camera", "class_camera.html", "class_camera" ],
+    [ "Checkbox", "class_checkbox.html", "class_checkbox" ],
+    [ "Image", "class_image.html", "class_image" ],
+    [ "MultiButton", "class_multi_button.html", "class_multi_button" ],
+    [ "Program", "class_program.html", "class_program" ],
+    [ "RenderObject", "class_render_object.html", "class_render_object" ],
+    [ "RenderObject2D", "class_render_object2_d.html", "class_render_object2_d" ],
+    [ "RenderObject3D", "class_render_object3_d.html", "class_render_object3_d" ],
+    [ "Shader", "class_shader.html", "class_shader" ],
+    [ "Slider", "class_slider.html", "class_slider" ],
+    [ "Texture", "class_texture.html", "class_texture" ],
+    [ "TextureBMP", "class_texture_b_m_p.html", "class_texture_b_m_p" ],
+    [ "TextureBridge", "class_texture_bridge.html", "class_texture_bridge" ]
 ];

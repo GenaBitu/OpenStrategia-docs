@@ -1,5 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d8/d3d/class_render_object.html" title="RenderObject class. " alt="" coords="5,31,107,57"/>
-<area shape="rect" id="node2" href="$d4/dfb/class_render_object2_d.html" title="RenderObject2D class. " alt="" coords="155,5,272,32"/>
-<area shape="rect" id="node3" href="$d6/dfb/class_render_object3_d.html" title="RenderObject3D class. " alt="" coords="155,56,272,83"/>
+<area shape="rect" id="node1" href="$class_render_object.html" title="RenderObject class. " alt="" coords="5,81,107,108"/>
+<area shape="rect" id="node2" href="$class_render_object2_d.html" title="RenderObject2D class. " alt="" coords="155,56,272,83"/>
+<area shape="rect" id="node8" href="$class_render_object3_d.html" title="RenderObject3D class. " alt="" coords="155,107,272,133"/>
+<area shape="rect" id="node3" href="$class_image.html" title="Image class. " alt="" coords="321,56,378,83"/>
+<area shape="rect" id="node4" href="$class_button.html" title="Button class. " alt="" coords="427,5,517,32"/>
+<area shape="rect" id="node6" href="$class_checkbox.html" title="Checkbox class. " alt="" coords="432,56,512,83"/>
+<area shape="rect" id="node7" href="$class_slider.html" title="Slider class. " alt="" coords="445,107,499,133"/>
+<area shape="rect" id="node5" href="$class_multi_button.html" title="MultiButton class. " alt="" coords="566,5,685,32"/>
 </map>

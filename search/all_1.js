@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['camera',['Camera',['../da/dbb/class_camera.html',1,'Camera'],['../da/dbb/class_camera.html#ad491e80e8096db31be3d6095475ff3f3',1,'Camera::Camera(const Camera &amp;other)'],['../da/dbb/class_camera.html#a1e39d35127e2fcbef7156967aa466328',1,'Camera::Camera(float FOV, float aspect, float speed, glm::vec3 position, glm::quat orientation)']]],
-  ['camera_2ehpp',['Camera.hpp',['../d4/d6a/_camera_8hpp.html',1,'']]]
+  ['button',['Button',['../class_button.html',1,'Button&lt; T &gt;'],['../class_button.html#a75e0a40f1690d1b85458670ef734520f',1,'Button::Button(glm::vec2 inPosition, glm::vec2 inSize, std::string texUnpressed, std::string texPressed, void(T::*func)(void), T *callObject, double pressedTime=0.12)'],['../class_button.html#afcfcc5509415438c913632677e23634c',1,'Button::Button(const Button &amp;other)']]],
+  ['button_2ehpp',['Button.hpp',['../_button_8hpp.html',1,'']]]
 ];

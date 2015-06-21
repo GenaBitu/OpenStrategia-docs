@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vertex_2eglsl',['Vertex.glsl',['../d7/df3/_vertex_8glsl.html',1,'']]]
+  ['shader_2ehpp',['Shader.hpp',['../_shader_8hpp.html',1,'']]],
+  ['slider_2ehpp',['Slider.hpp',['../_slider_8hpp.html',1,'']]]
 ];

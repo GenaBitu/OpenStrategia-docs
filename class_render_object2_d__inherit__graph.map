@@ -1,0 +1,8 @@
+<map id="RenderObject2D" name="RenderObject2D">
+<area shape="rect" id="node3" href="$class_image.html" title="Image class. " alt="" coords="145,155,201,181"/>
+<area shape="rect" id="node2" href="$class_render_object.html" title="RenderObject class. " alt="" coords="123,5,224,32"/>
+<area shape="rect" id="node4" href="$class_button.html" title="Button class. " alt="" coords="19,229,109,256"/>
+<area shape="rect" id="node6" href="$class_checkbox.html" title="Checkbox class. " alt="" coords="133,229,213,256"/>
+<area shape="rect" id="node7" href="$class_slider.html" title="Slider class. " alt="" coords="238,229,292,256"/>
+<area shape="rect" id="node5" href="$class_multi_button.html" title="MultiButton class. " alt="" coords="5,304,123,331"/>
+</map>

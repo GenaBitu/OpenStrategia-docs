@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "OpenStrategia", "index.html", [
-    [ "LICENSE", "da/d8a/md__d_1__dokumenty__marek__gena_bitu__git_hub__open_strategia__l_i_c_e_n_s_e.html", null ],
+    [ "LICENSE", "md__d_1__dokumenty__marek__gena_bitu__git_hub__open_strategia__l_i_c_e_n_s_e.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -24,7 +24,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"_button_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
